@@ -24,6 +24,8 @@ def get_climb_stats(climb_url):
     soup = BeautifulSoup(response.text, "lxml")
     
     stats = {}
+
+    # Get stats table
     table = soup.find("table", class_="table-transparant")
     if table:
         rows = table.find_all("tr")
@@ -32,7 +34,19 @@ def get_climb_stats(climb_url):
             value = row.find("td", class_="text-end")
             if label and value:
                 stats[label.text.strip()] = value.text.strip()
+
+     # Get country and region from breadcrumb
+    # Structure: Home > World > Europe > Country > ... > Region > Climb Name
+    breadcrumb = soup.find("ol", class_="breadcrumb")
+    if breadcrumb:
+        items = breadcrumb.find_all("li", class_="breadcrumb-item")
+        if len(items) >= 4:
+            stats["Country"] = items[3].text.strip()
+        if len(items) >= 2:
+            stats["Region"] = items[-2].text.strip()
+
     return stats
+
 
 # Step 1 — scrape links from pages 1 through 12
 all_climb_links = []

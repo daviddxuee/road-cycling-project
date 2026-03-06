@@ -1,301 +1,313 @@
-Difficulty points,Length,Average gradient,Steepest 100 metres,Total ascent,name,url
-1352.0,20.8 km,7.7%,13.3%,1594 m,Mont Ventoux,https://climbfinder.com/en/climbs/mont-ventoux-bedoin
-975.0,14 km,8%,11.3%,1122 m,Alpe d'Huez,https://climbfinder.com/en/climbs/alpe-d-huez
-1465.0,24.9 km,7.4%,10.3%,1846 m,Passo dello Stelvio,https://climbfinder.com/en/climbs/passe-dello-stelvio
-1556.0,34.8 km,6%,10.6%,2085 m,Col du Galibier,https://climbfinder.com/en/climbs/col-du-galibier
-1313.0,21 km,7.5%,13.4%,1577 m,Mont Ventoux from Malaucène,https://climbfinder.com/en/climbs/mont-ventoux-malaucene
-739.0,24.4 km,4.9%,11.8%,1206 m,Mont Ventoux from Sault,https://climbfinder.com/en/climbs/mont-ventoux-sault
-1223.0,21.1 km,7.4%,12.6%,1555 m,Passo dello Stelvio from Bormio,https://climbfinder.com/en/climbs/passo-dello-stelvio-bormio
-82.0,1.1 km,7.9%,13.9%,85 m,Eyserbosweg,https://climbfinder.com/en/climbs/eyserbosweg
-85.0,1.4 km,6.1%,16%,84 m,Keutenberg,https://climbfinder.com/en/climbs/keutenberg
-674.0,7 km,8.8%,22.9%,614 m,Super Planche des Belles Filles,https://climbfinder.com/en/climbs/planche-des-belles-filles
-114.0,4.4 km,4.2%,8.3%,185 m,Camerig,https://climbfinder.com/en/climbs/camerig
-129.0,1.1 km,8%,13%,91 m,Muur van Geraardsbergen,https://climbfinder.com/en/climbs/muur-van-geraardsbergen
-177.0,2 km,8.8%,16.3%,180 m,Côte de la Redoute,https://climbfinder.com/en/climbs/redoute
-1146.0,29 km,5.2%,11.9%,1519 m,Col de la Croix-de-Fer from Barrage du Verney / Allemont,https://climbfinder.com/en/climbs/col-de-la-croix-de-fer-barrage-du-verney
-247.0,2.3 km,9.9%,19.1%,227 m,Stockeu,https://climbfinder.com/en/climbs/stockeu
-806.0,12.6 km,7.5%,13.1%,950 m,Col du Grand Ballon from Moosch,https://climbfinder.com/en/climbs/grand-ballon
-341.0,4.1 km,7.8%,15.5%,316 m,Col de Haussire,https://climbfinder.com/en/climbs/haussire
-53.0,1.2 km,5.5%,11.7%,66 m,Cauberg,https://climbfinder.com/en/climbs/cauberg
-1185.0,23.3 km,6.8%,11.7%,1587 m,Cime de la Bonette,https://climbfinder.com/en/climbs/col-de-la-bonette-jausiers
-1777.0,21.2 km,8.3%,12.4%,1754 m,Grossglockner Pass / Edelweissspitze,https://climbfinder.com/en/climbs/grossglockner-hochalpenstrasse-edelweissspitze
-154.0,1.4 km,9.7%,16.4%,136 m,Mur de Huy,https://climbfinder.com/en/climbs/mur-de-huy
-150.0,0.6 km,11.4%,18.5%,65 m,Koppenberg,https://climbfinder.com/en/climbs/koppenberg
-981.0,16.9 km,7.2%,12.7%,1219 m,Semnoz,https://climbfinder.com/en/climbs/semnoz-annecy
-1055.0,16.9 km,7.5%,12%,1266 m,Col du Tourmalet,https://climbfinder.com/en/climbs/col-du-tourmalet
-84.0,1 km,7.6%,14.4%,80 m,Doodeman,https://climbfinder.com/en/climbs/doodeman
-661.0,9.1 km,7.5%,12.8%,682 m,Col de la Forclaz de Montmin,https://climbfinder.com/en/climbs/col-de-la-forclaz-de-montmin-vesonne
-996.0,11.3 km,9.2%,12.8%,1037 m,Col du Granon,https://climbfinder.com/en/climbs/col-du-granon
-68.0,0.5 km,11%,15.8%,57 m,Gulperberg from Partij,https://climbfinder.com/en/climbs/gulperberg-partij
-1326.0,19.6 km,7.6%,17.1%,1486 m,Passo di Gavia from Ponte di Legno,https://climbfinder.com/en/climbs/passo-di-gavia
-584.0,27.3 km,3.7%,11.7%,1021 m,La Bérarde,https://climbfinder.com/en/climbs/la-berarde
-1577.0,12.2 km,10.8%,17.7%,1326 m,Mortirolo,https://climbfinder.com/en/climbs/mortirolo
-221.0,2.6 km,8.3%,16.6%,212 m,Thier de Coo,https://climbfinder.com/en/climbs/thier-de-coo
-103.0,0.4 km,12.5%,17.5%,45 m,Paterberg,https://climbfinder.com/en/climbs/paterberg
-59.0,0.7 km,8.3%,13.8%,58 m,Kruisberg,https://climbfinder.com/en/climbs/kruisberg
-53.0,1.2 km,6.4%,9.4%,79 m,Kasteelstraat from Sinnich,https://climbfinder.com/en/climbs/kasteelstraat
-83.0,2 km,4.3%,9.2%,88 m,Oude Kwaremont,https://climbfinder.com/en/climbs/oude-kwaremont
-160.0,4.4 km,5.8%,9.6%,257 m,Col du Rosier,https://climbfinder.com/en/climbs/rosier-est
-982.0,24.9 km,5.6%,11.2%,1405 m,Passo di Gavia from Bormio,https://climbfinder.com/en/climbs/passo-di-gavia-bormio
-471.0,10.5 km,6.1%,10.9%,647 m,Col d'Ornon,https://climbfinder.com/en/climbs/col-d-ornon
-78.0,3.4 km,4.2%,8.4%,140 m,Vaalserberg / Drielandenpunt via Vaals,https://climbfinder.com/en/climbs/vaalserberg
-1185.0,14.6 km,8.8%,15.6%,1283 m,Col du Sabot,https://climbfinder.com/en/climbs/col-du-sabot
-437.0,8.7 km,6.9%,9.8%,604 m,Torri di Fraele from Turripiano,https://climbfinder.com/en/climbs/torri-di-fraele
-817.0,21.7 km,5.3%,9.1%,1147 m,Col du Grand Ballon,https://climbfinder.com/en/climbs/grand-ballon-cernay
-82.0,0.5 km,9.2%,14.9%,50 m,Moskesstraat,https://climbfinder.com/en/climbs/moskesstraat-terlanen
-1175.0,20.9 km,7%,11.4%,1474 m,Col du Glandon,https://climbfinder.com/en/climbs/col-du-glandon-la-chambre
-821.0,13.8 km,7.5%,11.9%,1031 m,Col du Chaussy,https://climbfinder.com/en/climbs/col-du-chaussy
-887.0,14.2 km,7.3%,14.7%,1040 m,Col d'Izoard,https://climbfinder.com/en/climbs/col-d-izoard
-216.0,4.4 km,5.4%,13.9%,240 m,Roche aux Faucons,https://climbfinder.com/en/climbs/roche-aux-faucons
-66.0,1 km,7.5%,11.3%,74 m,Oude Holleweg,https://climbfinder.com/en/climbs/oude-holleweg
-1232.0,47.4 km,4.3%,8.6%,2050 m,Col de l'Iséran,https://climbfinder.com/en/climbs/col-de-l-iseran-bourg-saint-maurice
-1025.0,15 km,7.9%,14.4%,1182 m,Hautacam / Col de Tramassel,https://climbfinder.com/en/climbs/hautacam
-165.0,1 km,12.1%,18.9%,125 m,Côte des Hézalles,https://climbfinder.com/en/climbs/hezalles
-60.0,2.2 km,4.8%,6.9%,106 m,Côte des Trois Frontières,https://climbfinder.com/en/climbs/cote-des-trois-frontieres
-1091.0,17.7 km,7.1%,12.8%,1260 m,Col du Grand Colombier,https://climbfinder.com/en/climbs/col-du-grand-colombier-culoz
-618.0,11.9 km,7.1%,9.9%,846 m,Col du Télégraphe,https://climbfinder.com/en/climbs/col-du-telegraphe
-1183.0,13.5 km,9.2%,12.8%,1246 m,Mont du Chat,https://climbfinder.com/en/climbs/mont-du-chat
-854.0,12.8 km,7.5%,14.1%,958 m,Col de Sarenne,https://climbfinder.com/en/climbs/col-de-sarenne-lac-du-chambon
-25.0,0.9 km,5%,8%,44 m,Italiaanseweg,https://climbfinder.com/en/climbs/italiaanseweg
-1124.0,18.3 km,7.7%,11.7%,1401 m,Col du Tourmalet from Luz Saint Sauveur via Voie Laurent Fignon,https://climbfinder.com/en/climbs/col-du-tourmalet-luz-saint-sauveur
-1961.0,18.5 km,9.2%,17.1%,1709 m,Colle delle Finestre,https://climbfinder.com/en/climbs/colle-delle-finestre
-645.0,9.7 km,7.9%,11%,770 m,Col du Petit Ballon,https://climbfinder.com/en/climbs/petit-ballon-munster
-1034.0,20.7 km,6.6%,12%,1371 m,Col Agnel from Château-Ville-Vieille,https://climbfinder.com/en/climbs/col-agnel
-57.0,0.6 km,8.3%,16.4%,50 m,Smeysberg,https://climbfinder.com/en/climbs/smeysberg
-511.0,9.4 km,6%,14.7%,567 m,Madonna del Ghisallo / Colle del Ghisallo,https://climbfinder.com/en/climbs/ghisallo
-77.0,1.1 km,7.4%,16%,79 m,Loorberg via Kersenpad,https://climbfinder.com/en/climbs/kersenpad
-925.0,13.2 km,7%,12.6%,923 m,Passo San Gottardo / Tremolapass,https://climbfinder.com/en/climbs/gotthardpass-airolo
-612.0,10 km,7.1%,13.9%,707 m,Col du Platzerwasel from Metzeral,https://climbfinder.com/en/climbs/col-de-platzerwasel
-986.0,13 km,7.7%,13.2%,1000 m,Col du Solude from Le Bourg d'Oisans via Villard Notre Dame,https://climbfinder.com/en/climbs/col-du-solude-villard-notre-dame
-1161.0,28.1 km,5.5%,9.9%,1543 m,Col de la Croix-de-Fer from Saint-Jean-de-Maurienne via Saint-Jean-d'Arves,https://climbfinder.com/en/climbs/col-de-la-croix-de-fer
-1434.0,47.1 km,4.5%,13.1%,2138 m,Colle del Nivolet,https://climbfinder.com/en/climbs/colle-del-nivolet
-854.0,19.2 km,6.1%,11.6%,1178 m,Col d'Izoard from Briançon,https://climbfinder.com/en/climbs/col-d-izoard-briancon
-34.0,2.2 km,3%,8.9%,65 m,Posbank,https://climbfinder.com/en/climbs/posbank
-827.0,13.6 km,7.6%,12.2%,1031 m,Luz Ardiden,https://climbfinder.com/en/climbs/luz-ardiden
-211.0,1.2 km,12.7%,17.6%,154 m,Ferme Libert,https://climbfinder.com/en/climbs/ferme-libert
-45.0,1.6 km,5%,6.3%,80 m,Loorberg,https://climbfinder.com/en/climbs/loorberg
-37.0,1.7 km,4%,8.5%,66 m,Fromberg,https://climbfinder.com/en/climbs/fromberg
-482.0,18 km,4.1%,11.4%,737 m,Ballon de Servance from Plancher-Bas,https://climbfinder.com/en/climbs/ballon-de-servance-plancher-bas
-1235.0,25.9 km,6.2%,11.4%,1609 m,Col de la Madeleine from Feissons-sur-Isère,https://climbfinder.com/en/climbs/col-de-la-madeleine-feissons-sur-isere
-155.0,1 km,11.6%,18.6%,118 m,Rue Tesny,https://climbfinder.com/en/climbs/tesny
-1764.0,9.8 km,12.3%,23.3%,1206 m,Monte Zoncolan,https://climbfinder.com/en/climbs/monte-zoncolan-ovaro
-710.0,18.7 km,5.7%,9.4%,1072 m,Col du Grand Ballon from Soultz,https://climbfinder.com/en/climbs/grand-ballon-soultz
-468.0,9 km,6.9%,13.8%,621 m,Ballon d’Alsace,https://climbfinder.com/en/climbs/ballon-d-alsace-saint-maurice-sur-moselle
-341.0,17.4 km,4.3%,6%,752 m,Col de la Schlucht,https://climbfinder.com/en/climbs/col-de-la-schlucht-munster
-57.0,1 km,5.9%,15.8%,60 m,Gulperberg from Gulpen,https://climbfinder.com/en/climbs/gulperberg
-197.0,2.1 km,8.5%,15.2%,182 m,Sur Steppes,https://climbfinder.com/en/climbs/sur-steppes
-103.0,2.6 km,5.4%,12.8%,141 m,Les Waides,https://climbfinder.com/en/climbs/les-waides
-885.0,11.6 km,8.6%,12.6%,990 m,Col de Joux Plane,https://climbfinder.com/en/climbs/col-de-joux-plane-samoens
-68.0,1.4 km,5%,10%,68 m,Bosberg,https://climbfinder.com/en/climbs/bosberg
-634.0,27 km,4.4%,9.2%,1198 m,Col de la Cayolle from Barcelonnette,https://climbfinder.com/en/climbs/col-de-la-cayolle-barcelonnette
-478.0,9.4 km,5.8%,17.2%,543 m,Col des Chevrères from Rexelaxert via Miellin,https://climbfinder.com/en/climbs/col-des-chevreres
-42.0,0.8 km,6.7%,10.2%,54 m,Slingerberg / Zusserdel,https://climbfinder.com/en/climbs/zusserdel
-1583.0,48.4 km,5.1%,9.5%,2460 m,El Teide,https://climbfinder.com/en/climbs/el-teide
-1055.0,32.2 km,4.5%,10.6%,1451 m,Col de l'Iséran from Lanslebourg,https://climbfinder.com/en/climbs/col-de-l-iseran-lanslebourg
-506.0,13.6 km,5.7%,9.4%,778 m,Semnoz from Col de Leschaux,https://climbfinder.com/en/climbs/semnoz-col-de-leschaux
-40.0,2.4 km,3.5%,8.7%,83 m,Zijpenberg via Snippendaalseweg,https://climbfinder.com/en/climbs/zijpenberg-rheden
-60.0,1.8 km,5.2%,9.8%,95 m,Op de Eiken,https://climbfinder.com/en/climbs/op-de-eiken
-233.0,3.4 km,8.1%,10.7%,277 m,Lacets de Montvernier,https://climbfinder.com/en/climbs/lacets-de-montvernier
-26.0,0.9 km,4.9%,7.4%,46 m,Bemelerberg,https://climbfinder.com/en/climbs/bemelerberg
-1180.0,16.1 km,7.8%,16.3%,1260 m,Grosse Scheidegg from Meiringen,https://climbfinder.com/en/climbs/grosse-scheidegg-meiringen
-803.0,19.3 km,6%,9.4%,1155 m,Cormet de Roselend from Bourg-Saint-Maurice,https://climbfinder.com/en/climbs/cormet-de-roselend-bourg-saint-maurice
-696.0,14.4 km,6%,13.6%,861 m,Col du Petit Ballon from Whir au Val,https://climbfinder.com/en/climbs/petit-ballon-whir-au-val
-60.0,3 km,3.8%,9.2%,114 m,Schweiberg from Mechelen,https://climbfinder.com/en/climbs/schweiberg
-535.0,12.1 km,6.5%,9.8%,786 m,Passo Pordoi,https://climbfinder.com/en/climbs/passo-pordoi-canazei
-963.0,29.7 km,4.7%,9.4%,1409 m,Col d'Aubisque from Argelès Gazost via Col du Soulor,https://climbfinder.com/en/climbs/col-d-aubisque
-1065.0,26.6 km,5.2%,11.9%,1379 m,Col du Glandon from Barrage du Verney / Allemont,https://climbfinder.com/en/climbs/col-du-glandon-barrage-du-verney
-119.0,18.2 km,2.3%,3.8%,423 m,Gorges de la Nesque from Villes-sur-Auzon,https://climbfinder.com/en/climbs/gorges-de-la-nesque-villes-sur-auzon
-162.0,6.8 km,4.7%,7.1%,318 m,Col du Rosier from Spa,https://climbfinder.com/en/climbs/rosier-nord
-41.0,0.4 km,10.2%,11.3%,40 m,Beekmansdalseweg,https://climbfinder.com/en/climbs/beekmansdalseweg
-2124.0,9.2 km,13%,35.9%,1196 m,Scanuppia / Malga Palazzo,https://climbfinder.com/en/climbs/scanuppia-malga-palazzo
-589.0,12.4 km,6.5%,12.4%,802 m,Col d'Aspin,https://climbfinder.com/en/climbs/col-d-aspin
-901.0,12.8 km,7.5%,13.3%,962 m,Col du Grand Ballon from Saint-Amarin,https://climbfinder.com/en/climbs/col-du-grand-ballon-saint-amarin
-53.0,4.1 km,2.8%,7.4%,117 m,Zijpenberg from Rozendaal,https://climbfinder.com/en/climbs/zijpenberg-rozendaal
-193.0,1.4 km,10.6%,16.4%,151 m,Thier de Huy,https://climbfinder.com/en/climbs/thier-de-huy
-49.0,1.7 km,5.1%,7.9%,86 m,De Plank from Sint-Pieters-Voeren,https://climbfinder.com/en/climbs/planck
-996.0,12.8 km,7.8%,15.8%,1002 m,Passo Fedaia,https://climbfinder.com/en/climbs/passo-fedaia-caprille
-1416.0,31.6 km,5.7%,12.7%,1789 m,Colle dell'Agnello,https://climbfinder.com/en/climbs/colle-dell-agnello-casteldelfino
-47.0,0.4 km,7.7%,11.2%,33 m,Molenberg,https://climbfinder.com/en/climbs/molenberg
-1455.0,38.6 km,4.9%,13.1%,1898 m,Kaunertaler Gletscherstrasse from Prutz,https://climbfinder.com/en/climbs/kaunertaler-gletscherstrasse-prutz
-251.0,8 km,4.2%,11.5%,335 m,Col de Sarenne from Alpe d'Huez,https://climbfinder.com/en/climbs/col-de-sarenne-alpe-d-huez
-59.0,0.8 km,8.1%,11.9%,67 m,Hallembaye,https://climbfinder.com/en/climbs/hallembaye
-664.0,6.4 km,9.5%,18.5%,605 m,Oulles,https://climbfinder.com/en/climbs/oulles
-39.0,1.5 km,5.1%,6.7%,74 m,Gieveld,https://climbfinder.com/en/climbs/gieveld
-1321.0,19.6 km,7.8%,14.4%,1525 m,Col de la Madeleine from La Chambre via Montgellafrey,https://climbfinder.com/en/climbs/col-de-la-madeleine-la-chambre-montgellafrey
-186.0,3.6 km,6.1%,12.4%,222 m,Côte de Wanne,https://climbfinder.com/en/climbs/cote-de-wanne
-39.0,1.1 km,5.4%,8%,62 m,Geulhemmerberg,https://climbfinder.com/en/climbs/geulhemmerberg
-457.0,9.7 km,6.5%,15.2%,624 m,Col du Petit Ballon from Sondernach,https://climbfinder.com/en/climbs/petit-ballon-sondernach
-25.0,1.5 km,3.4%,7.7%,52 m,Rozenbos / Holleweg,https://climbfinder.com/en/climbs/holleweg-veluwezoom
-126.0,5.1 km,4.6%,7.7%,236 m,Côte d'Aisomont,https://climbfinder.com/en/climbs/aisomont
-98.0,3 km,5.5%,7.6%,167 m,Côte de Forêt,https://climbfinder.com/en/climbs/cote-de-foret
-444.0,1.8 km,15.5%,21.7%,273 m,Muro di Sormano,https://climbfinder.com/en/climbs/muro-di-sormano-colma
-1235.0,19.3 km,7.9%,11.2%,1522 m,Col de la Madeleine,https://climbfinder.com/en/climbs/col-de-la-madeleine-la-chambre
-26.0,1.3 km,4.1%,6.2%,54 m,Amerongse Berg from Overberg,https://climbfinder.com/en/climbs/amerongse-berg
-429.0,9.1 km,6.6%,11.9%,600 m,Passo Gardena,https://climbfinder.com/en/climbs/passo-di-gardena-corvara
-110.0,0.8 km,9.1%,17.4%,69 m,Mont Kemmel,https://climbfinder.com/en/climbs/mont-kemmel-west
-675.0,15.8 km,6.1%,9.4%,972 m,Col du Grand Ballon from Willer-sur-Thur,https://climbfinder.com/en/climbs/grand-ballon-willer-sur-thur
-1022.0,29.4 km,5.2%,11.6%,1525 m,Col de Tentes from Luz Saint Sauveur via Cirque de Gavarnie,https://climbfinder.com/en/climbs/col-de-tentes-gavarnie
-1111.0,18.9 km,7.4%,14.1%,1403 m,Col du Tourmalet from Luz Saint Sauveur via Super Barèges,https://climbfinder.com/en/climbs/col-du-tourmalet-luz-saint-sauveur-super-bareges
-990.0,19.9 km,6.3%,14.5%,1247 m,Mottarone from Stresa,https://climbfinder.com/en/climbs/mottarone-stresa
-74.0,3.4 km,3.8%,9.5%,131 m,Rue de Beusdael from Sippenaeken,https://climbfinder.com/en/climbs/rue-de-beusdael
-511.0,10.2 km,7%,9.7%,708 m,Sa Calobra / Coll dels Reis,https://climbfinder.com/en/climbs/sa-calobra-port-de-sa-calobra
-1028.0,13.7 km,8.3%,11.6%,1132 m,Nufenenpass,https://climbfinder.com/en/climbs/nufenenpass-ulrichen
-1316.0,44.5 km,4.6%,10.5%,2056 m,Pico de las Nieves,https://climbfinder.com/en/climbs/pico-de-las-nieves-maspalomas
-146.0,1 km,10.1%,15.8%,103 m,Fiertelmeers,https://climbfinder.com/en/climbs/fiertelmeers
-34.0,1.2 km,4.9%,8.4%,59 m,Congoberg,https://climbfinder.com/en/climbs/congoberg
-79.0,0.8 km,6.4%,14.7%,49 m,Taaienberg,https://climbfinder.com/en/climbs/taaienberg
-463.0,9.3 km,6.9%,10.6%,643 m,Passo Pordoi from Arabba,https://climbfinder.com/en/climbs/passo-pordoi-arabba
-446.0,19.5 km,4.4%,8.6%,862 m,Col de Rousset from Die,https://climbfinder.com/en/climbs/col-de-rousset-die
-698.0,17.7 km,5.8%,9.6%,1037 m,Col du Mollard,https://climbfinder.com/en/climbs/col-du-mollard-villargondran
-722.0,12.2 km,7.3%,11.7%,891 m,Furkapass from Realp,https://climbfinder.com/en/climbs/furkapass-realp
-885.0,16.2 km,6.8%,15.4%,1111 m,Col de la Colombière,https://climbfinder.com/en/climbs/col-de-la-colombiere-scionzier
-280.0,2.7 km,7.3%,23.9%,195 m,Pied Monti,https://climbfinder.com/en/climbs/pied-monti
-64.0,0.7 km,9.6%,12.1%,64 m,Brakkeberg via Vogelzangweg,https://climbfinder.com/en/climbs/brakkeberg
-170.0,1.4 km,10.7%,18.9%,149 m,Drolenval,https://climbfinder.com/en/climbs/drolenval
-500.0,7.6 km,7.6%,14.8%,577 m,Oz en Oisans from Barrage du Verney,https://climbfinder.com/en/climbs/col-d-oz
-76.0,1 km,7.8%,15.5%,77 m,Berg la Clouse,https://climbfinder.com/en/climbs/berg-la-clouse
-179.0,1.3 km,11.3%,17.8%,149 m,Voie des Chars,https://climbfinder.com/en/climbs/voie-des-chars
-891.0,20.3 km,6.2%,9%,1251 m,Cormet de Roselend from Beaufort,https://climbfinder.com/en/climbs/cormet-de-roselend
-873.0,12.2 km,7.9%,15.2%,964 m,Col du Pré from Beaufort,https://climbfinder.com/en/climbs/col-du-pre-beaufort
-1065.0,26.3 km,5.8%,10.4%,1534 m,Grimselpass from Innertkirchen,https://climbfinder.com/en/climbs/grimselpass-innertkirchen
-269.0,4.9 km,6.5%,12.6%,320 m,Côte du Malgré-Tout,https://climbfinder.com/en/climbs/cote-du-malgre-tout
-651.0,29.8 km,4.6%,6%,1378 m,Col du Petit Saint-Bernard from Bourg Saint Maurice,https://climbfinder.com/en/climbs/col-du-petit-saint-bernard-bourg-saint-maurice-route-de-petit-saint-bernard
-533.0,13.2 km,5.4%,13.4%,720 m,Pré de Madame Carle from Vallouise,https://climbfinder.com/en/climbs/pre-de-madame-carle
-36.0,1.8 km,4.1%,7.5%,73 m,Sibbergrubbe from Valkenburg,https://climbfinder.com/en/climbs/sibbergrubbe
-52.0,0.9 km,6.9%,12.2%,65 m,Schilberg from Slenaken,https://climbfinder.com/en/climbs/schilberg
-84.0,2.1 km,5.1%,12.8%,109 m,Schophemerheide from 's Gravenvoeren,https://climbfinder.com/en/climbs/schophemerheide
-106.0,3 km,5.5%,10.5%,166 m,Côte de Xhierfomont,https://climbfinder.com/en/climbs/xhierfomont
-156.0,13.1 km,2.8%,9.1%,369 m,Mützenich from Eupen via Wesertalsperre,https://climbfinder.com/en/climbs/mutzenich-eupen-wesertalsperre
-851.0,18.9 km,5.9%,14.4%,1115 m,Col de Vars,https://climbfinder.com/en/climbs/col-de-vars-guillestre
-1273.0,16.1 km,8.7%,12.5%,1395 m,Col de Portet from Saint Lary Soulan,https://climbfinder.com/en/climbs/col-portet-saint-lary-soulan
-469.0,24.7 km,3.6%,8.9%,877 m,Col du Grand Ballon from Kruth,https://climbfinder.com/en/climbs/grand-ballon-kruth
-130.0,0.9 km,11.2%,16.5%,105 m,Saint-Roch,https://climbfinder.com/en/climbs/saint-roch
-790.0,16.9 km,6.5%,11.8%,1105 m,Col d'Allos from Barcelonnette,https://climbfinder.com/en/climbs/col-d-allos
-100.0,4.5 km,3.9%,8.3%,173 m,Camerig via Groenenweg,https://climbfinder.com/en/climbs/camerig-groenenweg
-222.0,3.9 km,7%,12%,271 m,Col de Haussire South,https://climbfinder.com/en/climbs/haussire-south
-53.0,1.2 km,6.4%,10.4%,75 m,Muur van Beek / Van Randwijckweg from Beek,https://climbfinder.com/en/climbs/van-randwijckweg
-23.0,2.5 km,2.8%,4.8%,69 m,Oude Kleefsebaan from Wyler,https://climbfinder.com/en/climbs/oude-kleefsebaan
-49.0,1 km,5.3%,13.6%,55 m,Piemert,https://climbfinder.com/en/climbs/piemert
-1432.0,22.5 km,7.6%,15.7%,1717 m,Col de la Loze,https://climbfinder.com/en/climbs/col-de-la-loze-brides-les-bains
-39.0,1 km,5%,10.9%,53 m,Grasbos / Poggio van Diest,https://climbfinder.com/en/climbs/grasbos-poggio-diest
-949.0,27.1 km,5.2%,10.7%,1405 m,Cirque de Troumouse from Luz-Saint Sauveur,https://climbfinder.com/en/climbs/cirque-de-troumouse-luz-saint-sauveur
-521.0,5.2 km,9.7%,16.1%,507 m,Col de Pontis,https://climbfinder.com/en/climbs/col-de-pontis-ubaye
-27.0,0.6 km,6.3%,8.8%,39 m,Emmapiramide,https://climbfinder.com/en/climbs/emmapiramide
-68.0,1 km,7.9%,10.8%,77 m,Oude Huls from Simpelveld,https://climbfinder.com/en/climbs/oude-huls
-847.0,7.5 km,8.7%,19.9%,656 m,Tre Cime di Lavaredo from Misurina,https://climbfinder.com/en/climbs/tre-cime-di-lavaredo-misurina
-455.0,11.8 km,5.9%,10.4%,694 m,Col de la Colombière from Le Grand Bornand,https://climbfinder.com/en/climbs/col-de-la-colombiere
-54.0,0.9 km,7.1%,11.9%,66 m,Berendries,https://climbfinder.com/en/climbs/berendries
-996.0,14 km,7.4%,15.9%,1038 m,Lagos de Covadonga from Cangas de Onis,https://climbfinder.com/en/climbs/lagos-de-covadonga-cangas-de-onis
-212.0,1.9 km,9.1%,19.6%,173 m,Triple Mur des Monty,https://climbfinder.com/en/climbs/triple-mur-de-monty
-113.0,1.4 km,7.6%,15%,106 m,Schapenberg via Riekestraat,https://climbfinder.com/en/climbs/schapenberg
-181.0,8.3 km,4.2%,8.6%,347 m,Col du Rosier via La Gleize,https://climbfinder.com/en/climbs/rosier-sud
-790.0,8.1 km,9.6%,16.6%,776 m,Menador / Monte Rovere from Caldonazzo,https://climbfinder.com/en/climbs/menador-monte-rovere-caldonazzo
-1322.0,26.2 km,6.7%,10.6%,1753 m,Passo di San Marco from Morbegno,https://climbfinder.com/en/climbs/passo-di-san-marco-morbegno
-149.0,1.6 km,9.5%,13%,149 m,Chambralles,https://climbfinder.com/en/climbs/chambralles
-470.0,7.3 km,7.4%,13.3%,537 m,Col de la Forclaz de Montmin from Menthon-Saint-Bernard,https://climbfinder.com/en/climbs/col-de-la-forclaz-de-montmin-menthon-saint-bernard
-125.0,4.1 km,4.7%,10.3%,191 m,Côte de Niaster,https://climbfinder.com/en/climbs/cote-de-niaster
-1131.0,11.4 km,9.5%,15.7%,1084 m,Mont Colombis from La Plaine,https://climbfinder.com/en/climbs/mont-colombis
-81.0,0.6 km,11.1%,15.5%,65 m,Kromhagerweg,https://climbfinder.com/en/climbs/kromhagerweg
-914.0,9.8 km,9.5%,14.7%,923 m,Passo Giau,https://climbfinder.com/en/climbs/passo-giau-selva-di-cadore
-933.0,17.5 km,6.9%,11.9%,1213 m,Col du Galibier from Valloire,https://climbfinder.com/en/climbs/col-du-galibier-valloire
-1164.0,34.3 km,5.5%,9.7%,1881 m,Col du Grand-Saint-Bernard,https://climbfinder.com/en/climbs/col-du-grand-saint-bernard-aoste
-71.0,1.1 km,7.7%,13.2%,82 m,Kanarieberg,https://climbfinder.com/en/climbs/kanarieberg
-374.0,16.5 km,4.2%,8.8%,701 m,Ballon d’Alsace from Giromagny,https://climbfinder.com/en/climbs/ballon-d-alsace-giromagny
-558.0,22.5 km,4.3%,9.6%,966 m,Hourquette d'Ancizan from Payolle,https://climbfinder.com/en/climbs/hourquette-d-ancizan-campan
-287.0,5.3 km,7.1%,10.8%,375 m,Passo Sella from Plan de Gralba,https://climbfinder.com/en/climbs/passo-sella-plan-de-gralba
-36.0,1.9 km,3.4%,8.3%,65 m,Zevenheuvelenweg from Groesbeek,https://climbfinder.com/en/climbs/zevenheuvelenweg
-238.0,9.2 km,4.7%,9.1%,435 m,Coll de sa Batalla from Caimari,https://climbfinder.com/en/climbs/coll-de-sa-batalla-caimari
-79.0,2.3 km,4.2%,13.3%,99 m,Lange Bosweg,https://climbfinder.com/en/climbs/lange-bosweg
-241.0,6.8 km,5.8%,10.9%,393 m,Col d'Oderen from Kruth,https://climbfinder.com/en/climbs/col-d-oderen
-191.0,2.1 km,9.2%,13.5%,194 m,Roche-à-Frêne,https://climbfinder.com/en/climbs/roche-a-frene
-1070.0,17.8 km,7.6%,12%,1360 m,Sustenpass from Wassen,https://climbfinder.com/en/climbs/sustenpass-wassen
-29.0,0.9 km,5.1%,8.2%,44 m,Holleweg from Kasteel Doorwerth,https://climbfinder.com/en/climbs/holleweg-doorwerth
-27.0,0.7 km,3.7%,10.1%,25 m,Maasberg from Kasteel Elsloo,https://climbfinder.com/en/climbs/maasberg
-63.0,5.9 km,2.6%,9.4%,153 m,Col de la Madeleine from Malaucene,https://climbfinder.com/en/climbs/col-de-la-madeleine-malaucene
-223.0,2.9 km,8.2%,12.2%,235 m,Le Serre de Tourre,https://climbfinder.com/en/climbs/le-serre-de-tourre
-161.0,0.9 km,13%,16.4%,119 m,Route de Saint-Vith,https://climbfinder.com/en/climbs/route-de-saint-vith
-57.0,1 km,6.6%,12.6%,69 m,Orsbach from Lemiers,https://climbfinder.com/en/climbs/orsbach
-33.0,1.6 km,3.7%,8.2%,58 m,Vogelsang / Hohldörn,https://climbfinder.com/en/climbs/vogelzang-holdeurn
-65.0,2.2 km,4.8%,10.3%,104 m,Magnebos,https://climbfinder.com/en/climbs/magnebos
-761.0,16.5 km,6.4%,10.3%,1060 m,Furkapass,https://climbfinder.com/en/climbs/furkapass
-944.0,17.1 km,7%,13.8%,1202 m,Col d'Aubisque,https://climbfinder.com/en/climbs/col-d-aubisque-laruns
-1150.0,25.6 km,6.5%,11.5%,1659 m,Cime de la Bonette from Saint-Étienne-de-Tinée,https://climbfinder.com/en/climbs/col-de-la-bonette-saint-etienne-de-tinee
-1422.0,29.1 km,6.2%,14.1%,1806 m,Passo del Rombo,https://climbfinder.com/en/climbs/passo-del-rombo-st-leonhard-in-passeier
-173.0,14.1 km,3%,7.8%,425 m,Baraque Michel,https://climbfinder.com/en/climbs/baraque-michel
-1500.0,25.7 km,7.1%,12%,1818 m,Col du Sanetsch,https://climbfinder.com/en/climbs/col-du-sanetsch
-46.0,1.9 km,4.6%,7.5%,86 m,Bois de la Houppe,https://climbfinder.com/en/climbs/bois-de-la-houppe
-666.0,23.8 km,4.6%,8.4%,1095 m,Passo di Foscagno from Bormio,https://climbfinder.com/en/climbs/passo-di-foscagno
-1346.0,30.3 km,5.9%,13.5%,1799 m,Passo dello Spluga from Chiavenna,https://climbfinder.com/en/climbs/passo-dello-spluga-chiavenna
-39.0,1.2 km,5.6%,7.6%,67 m,Slingerberg,https://climbfinder.com/en/climbs/slingerberg
-642.0,14.6 km,5.6%,12.4%,817 m,Col de Vars from Les Gleizolles,https://climbfinder.com/en/climbs/col-de-vars-les-gleizolles
-17.0,0.7 km,4.8%,6.7%,31 m,Grebbeberg from Wageningen,https://climbfinder.com/en/climbs/grebbeberg
-171.0,11.8 km,3.7%,5.3%,442 m,Col de Leschaux from Sévrier,https://climbfinder.com/en/climbs/col-de-leschaux-sevrier
-522.0,22.5 km,4.6%,6.9%,1031 m,Col de Meyrand,https://climbfinder.com/en/climbs/col-de-meyrand
-645.0,11.5 km,7.1%,11.9%,821 m,Col des Champs from Colmars,https://climbfinder.com/en/climbs/col-des-champs-colmars
-44.0,1.7 km,4.5%,10.6%,74 m,Koning van Spanje,https://climbfinder.com/en/climbs/koning-van-spanje
-55.0,2.8 km,3.5%,10.5%,99 m,Epenerbaan,https://climbfinder.com/en/climbs/epenerbaan
-21.0,0.6 km,5.2%,7.9%,34 m,Koerheuvel / Paardenveld,https://climbfinder.com/en/climbs/koerheuvel
-159.0,2.6 km,7.3%,13.5%,189 m,Col de l'Échelle from Névache,https://climbfinder.com/en/climbs/col-de-l-echelle-nevache
-37.0,0.4 km,9.7%,12.8%,34 m,Col du VAM via Ronde van Drenthepad,https://climbfinder.com/en/climbs/vam-berg
-782.0,34.8 km,4%,11.7%,1398 m,Col du Galibier from Briançon,https://climbfinder.com/en/climbs/col-du-galibier-briancon
-457.0,8.6 km,6.8%,13.4%,585 m,Col du Galibier from Col du Lautaret,https://climbfinder.com/en/climbs/col-du-galibier-lautaret
-838.0,15.9 km,6.7%,11.5%,1071 m,Passo Giau from Cortina d'Ampezzo,https://climbfinder.com/en/climbs/passo-giau-pocol
-431.0,12.9 km,5.1%,12.7%,652 m,Col d'Aspin from Sainte Marie de Campan,https://climbfinder.com/en/climbs/col-d-aspin-sainte-marie-de-campan
-688.0,12.3 km,6.4%,12.4%,794 m,Rocacorba / Puigsou from Banyoles,https://climbfinder.com/en/climbs/rocacorba-banyoles
-468.0,17.3 km,4.9%,8.3%,844 m,Col des Aravis,https://climbfinder.com/en/climbs/col-des-aravis-thones
-1007.0,18.8 km,6.8%,11%,1278 m,Col de Pailhères from Ax-les-Thermes,https://climbfinder.com/en/climbs/col-de-pailheres
-871.0,18.4 km,5.8%,13.8%,1067 m,Alpe d'Huez via Villard-Reculas & Pas de la Confession,https://climbfinder.com/en/climbs/alpe-d-huez-villard-reculas
-92.0,1.2 km,7.4%,18.2%,89 m,Côte du Trieu,https://climbfinder.com/en/climbs/cote-de-trieu
-138.0,1.2 km,7.2%,14.6%,88 m,Mont Saint-Laurent from Saint-Sauveur,https://climbfinder.com/en/climbs/mont-saint-laurent
-198.0,6.5 km,4.9%,12%,320 m,Côte de Desnie,https://climbfinder.com/en/climbs/desnie
-405.0,13.5 km,4.9%,8.6%,662 m,Ballon de Servance,https://climbfinder.com/en/climbs/ballon-de-servance
-25.0,0.8 km,5.3%,6.8%,43 m,Tiegemberg,https://climbfinder.com/en/climbs/tiegemberg
-178.0,6.4 km,5%,8.8%,317 m,La Vecquée,https://climbfinder.com/en/climbs/vecquee
-1607.0,12.5 km,11.1%,14.5%,1385 m,Rettenbachferner via Ötztaler Gletscherstrasse,https://climbfinder.com/en/climbs/rettenbachferner-otztaler-gletscherstrasse
-152.0,3.6 km,5.7%,13.2%,205 m,Haute Levée,https://climbfinder.com/en/climbs/haute-levee
-216.0,8.2 km,4.9%,8.4%,403 m,Col de Bramont from Wildenstein,https://climbfinder.com/en/climbs/col-de-bramont
-842.0,13.9 km,7.1%,14.1%,981 m,Col du Solude,https://climbfinder.com/en/climbs/col-du-solude-la-paute
-96.0,1.9 km,5.3%,7.5%,103 m,Citadelle de Namur via Route Merveilleuse,https://climbfinder.com/en/climbs/route-merveilleuse-citadelle-de-namur
-200.0,1.6 km,9.7%,20.4%,151 m,Montagne de la Croix from Dinant,https://climbfinder.com/en/climbs/montagne-de-la-croix-dinant
-600.0,9.1 km,7.7%,13.2%,705 m,Bormio 2000 from Bormio,https://climbfinder.com/en/climbs/bormio-2000
-254.0,4.9 km,7%,9.6%,345 m,Puig de Sant Salvador from Felanitx,https://climbfinder.com/en/climbs/monasterio-san-salvador-felanitx
-112.0,0.7 km,12.2%,19.2%,80 m,Sur le Thier,https://climbfinder.com/en/climbs/sur-le-thier
-438.0,11.1 km,5.8%,9.1%,638 m,Col de la Chaudière from Bourdeaux,https://climbfinder.com/en/climbs/col-de-la-chaudiere-bourdeaux
-50.0,2.1 km,4.4%,7.7%,94 m,Trintelerberg from Eys,https://climbfinder.com/en/climbs/trintelerberg
-51.0,1.4 km,5.7%,8.4%,83 m,Eperheide from Epen,https://climbfinder.com/en/climbs/eperheide
-177.0,1.5 km,10.5%,16.9%,157 m,Gayolle,https://climbfinder.com/en/climbs/gayolle
-55.0,0.5 km,7.7%,11.2%,38 m,Bekestraat from Eizer,https://climbfinder.com/en/climbs/bekestraat-eizer
-37.0,1 km,5%,11.9%,51 m,Kruisberg from Nijswiller,https://climbfinder.com/en/climbs/kruisberg-nijswiller
-149.0,5.9 km,4.1%,12.5%,244 m,Kesternich from Rurberg,https://climbfinder.com/en/climbs/kesternich-rurberg
-431.0,8.8 km,5.8%,15.9%,512 m,Col de Pontis from Savines-le-Lac,https://climbfinder.com/en/climbs/col-de-pontis-savines-le-lac
-1028.0,22.1 km,5.7%,12.6%,1259 m,Timmelsjoch from Sölden,https://climbfinder.com/en/climbs/timmelsjoch-solden
-98.0,1.7 km,6.7%,13.3%,114 m,Kluisberg,https://climbfinder.com/en/climbs/kluisberg
-1284.0,41 km,4.8%,11.6%,1983 m,Col du Grand-Saint-Bernard from Orsières,https://climbfinder.com/en/climbs/col-du-grand-saint-bernard-orsieres
-1117.0,27.7 km,5.8%,13.1%,1595 m,Sustenpass,https://climbfinder.com/en/climbs/sustenpass-innertkirchen
-661.0,10 km,7.9%,13%,783 m,Hourquette d'Ancizan,https://climbfinder.com/en/climbs/hourquette-d-ancizan
-1275.0,19.2 km,7.5%,15.4%,1436 m,Passo di San Marco from Olmo al Brembo,https://climbfinder.com/en/climbs/passo-di-san-marco-olmo-al-brembo
-894.0,20.3 km,6.3%,9.1%,1282 m,Col de la Cayolle,https://climbfinder.com/en/climbs/col-de-la-cayolle-saint-martin
-199.0,1.7 km,10.4%,14.1%,178 m,Mur du Pallon,https://climbfinder.com/en/climbs/mur-de-pallon
-519.0,3.8 km,11.2%,17.6%,430 m,Mirador de Cherfe from Masca,https://climbfinder.com/en/climbs/mirador-de-cherfe-masca
-197.0,1.7 km,9.6%,17.1%,159 m,Haute Folie via Rue des Gottes,https://climbfinder.com/en/climbs/haute-folie
-154.0,1.6 km,9.5%,13.3%,155 m,Wanneranval,https://climbfinder.com/en/climbs/wanneranval
-33.0,1.1 km,5.1%,7.5%,54 m,Eltenberg from Elten,https://climbfinder.com/en/climbs/eltenberg
-866.0,11.6 km,8%,18.4%,933 m,Passo di Valcava from San Gottardo,https://climbfinder.com/en/climbs/passo-di-valcava-san-gottardo
-69.0,0.7 km,9.3%,12.8%,66 m,Bruine Put,https://climbfinder.com/en/climbs/bruine-put-dworp
-146.0,1.4 km,9.8%,15.7%,134 m,Côte d'Amermont,https://climbfinder.com/en/climbs/cote-d-amermont
-31.0,3.8 km,2.5%,5.3%,95 m,Gorges de la Nesque from Monieux,https://climbfinder.com/en/climbs/gorges-de-la-nesque-monieux
-1101.0,19.7 km,6.8%,17.2%,1348 m,Alpe Giumello from Bellano,https://climbfinder.com/en/climbs/alpe-giumello
-85.0,3 km,4.2%,15.2%,126 m,Côte du Bois de la Hees / Kinkenweg from Montzen,https://climbfinder.com/en/climbs/kinkenweg
-422.0,9.4 km,6.1%,15.1%,576 m,Collet du Linge from Weiermatten,https://climbfinder.com/en/climbs/collet-du-linge-weiermatten
-27.0,1.3 km,4%,8.1%,53 m,Geldenberg from Frasselt,https://climbfinder.com/en/climbs/geldenberg-frasselt
-716.0,13.9 km,6.7%,13.7%,928 m,Col de Peyresourde,https://climbfinder.com/en/climbs/col-de-peyresourde-bagneres-de-luchon
-985.0,10.9 km,7.9%,18.4%,864 m,Mont Artzamendi from Laxia,https://climbfinder.com/en/climbs/mont-artzamendi-laxia
-591.0,11.2 km,7.1%,11.1%,794 m,Passo Sella from Canazei,https://climbfinder.com/en/climbs/passo-sella-canazei
-1656.0,10.1 km,12.4%,19.5%,1256 m,Kitzbüheler Horn,https://climbfinder.com/en/climbs/kitzbuheler-horn
-1044.0,22.5 km,6.1%,11.7%,1360 m,Albulapass,https://climbfinder.com/en/climbs/albulapass
-63.0,4.4 km,3.1%,7.6%,137 m,Hotond via Hoogbergstraat,https://climbfinder.com/en/climbs/hotond
-507.0,9 km,7%,13.3%,633 m,Les Deux Alpes,https://climbfinder.com/en/climbs/les-deux-alpes
-885.0,11.7 km,7%,13.2%,818 m,Vršič from Kranjska Gora,https://climbfinder.com/en/climbs/vrsic-kranjska-gora
-499.0,12.9 km,5.2%,13%,673 m,Ballon d'Alsace from Sewen,https://climbfinder.com/en/climbs/ballon-d-alsace-sewen
-445.0,9.7 km,6.6%,9.7%,639 m,Col de Vence from Vence,https://climbfinder.com/en/climbs/col-de-vence
-630.0,11.7 km,7%,10.6%,816 m,Col de la Croix Fry from Thônes,https://climbfinder.com/en/climbs/col-de-la-croix-fry-thones
+Difficulty points,Length,Average gradient,Steepest 100 metres,Total ascent,Country,Region,name,url
+1352,20.8 km,7.7%,13.3%,1594 m,France,Vaucluse,Mont Ventoux,https://climbfinder.com/en/climbs/mont-ventoux-bedoin
+975,14 km,8%,11.3%,1122 m,France,Bourg d'Oisans,Alpe d'Huez,https://climbfinder.com/en/climbs/alpe-d-huez
+1465,24.9 km,7.4%,10.3%,1846 m,Italy,Bolzano,Passo dello Stelvio,https://climbfinder.com/en/climbs/passe-dello-stelvio
+1556,34.8 km,6%,10.6%,2085 m,France,Bourg d'Oisans,Col du Galibier,https://climbfinder.com/en/climbs/col-du-galibier
+1313,21 km,7.5%,13.4%,1577 m,France,Vaucluse,Mont Ventoux from Malaucène,https://climbfinder.com/en/climbs/mont-ventoux-malaucene
+739,24.4 km,4.9%,11.8%,1206 m,France,Vaucluse,Mont Ventoux from Sault,https://climbfinder.com/en/climbs/mont-ventoux-sault
+1223,21.1 km,7.4%,12.6%,1555 m,Italy,Sondrio,Passo dello Stelvio from Bormio,https://climbfinder.com/en/climbs/passo-dello-stelvio-bormio
+82,1.1 km,7.9%,13.9%,85 m,Netherlands,South Limburg,Eyserbosweg,https://climbfinder.com/en/climbs/eyserbosweg
+85,1.4 km,6.1%,16%,84 m,Netherlands,South Limburg,Keutenberg,https://climbfinder.com/en/climbs/keutenberg
+674,7 km,8.8%,22.9%,614 m,France,Haute-Saône,Super Planche des Belles Filles,https://climbfinder.com/en/climbs/planche-des-belles-filles
+114,4.4 km,4.2%,8.3%,185 m,Netherlands,South Limburg,Camerig,https://climbfinder.com/en/climbs/camerig
+129,1.1 km,8%,13%,91 m,Belgium,Denderland,Muur van Geraardsbergen,https://climbfinder.com/en/climbs/muur-van-geraardsbergen
+177,2 km,8.8%,16.3%,180 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Côte de la Redoute,https://climbfinder.com/en/climbs/redoute
+1146,29 km,5.2%,11.9%,1519 m,France,Bourg d'Oisans,Col de la Croix-de-Fer from Barrage du Verney / Allemont,https://climbfinder.com/en/climbs/col-de-la-croix-de-fer-barrage-du-verney
+247,2.3 km,9.9%,19.1%,227 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Stockeu,https://climbfinder.com/en/climbs/stockeu
+806,12.6 km,7.5%,13.1%,950 m,France,Upper Rhine,Col du Grand Ballon from Moosch,https://climbfinder.com/en/climbs/grand-ballon
+341,4.1 km,7.8%,15.5%,316 m,Belgium,Heart of the Ardennes,Col de Haussire,https://climbfinder.com/en/climbs/haussire
+53,1.2 km,5.5%,11.7%,66 m,Netherlands,South Limburg,Cauberg,https://climbfinder.com/en/climbs/cauberg
+1185,23.3 km,6.8%,11.7%,1587 m,France,Serre Ponçon,Cime de la Bonette,https://climbfinder.com/en/climbs/col-de-la-bonette-jausiers
+1777,21.2 km,8.3%,12.4%,1754 m,Alps,Salzburg,Grossglockner Pass / Edelweissspitze,https://climbfinder.com/en/climbs/grossglockner-hochalpenstrasse-edelweissspitze
+154,1.4 km,9.7%,16.4%,136 m,Belgium,Pays de Liège,Mur de Huy,https://climbfinder.com/en/climbs/mur-de-huy
+150,0.6 km,11.4%,18.5%,65 m,Belgium,Flemish Ardennes,Koppenberg,https://climbfinder.com/en/climbs/koppenberg
+981,16.9 km,7.2%,12.7%,1219 m,France,Annecy,Semnoz,https://climbfinder.com/en/climbs/semnoz-annecy
+1055,16.9 km,7.5%,12%,1266 m,France,Hautes-Pyrénées,Col du Tourmalet,https://climbfinder.com/en/climbs/col-du-tourmalet
+84,1 km,7.6%,14.4%,80 m,Netherlands,South Limburg,Doodeman,https://climbfinder.com/en/climbs/doodeman
+,,,,,,,,https://climbfinder.com/en/climbs/
+661,9.1 km,7.5%,12.8%,682 m,France,Annecy,Col de la Forclaz de Montmin,https://climbfinder.com/en/climbs/col-de-la-forclaz-de-montmin-vesonne
+996,11.3 km,9.2%,12.8%,1037 m,France,Briançon,Col du Granon,https://climbfinder.com/en/climbs/col-du-granon
+68,0.5 km,11%,15.8%,57 m,Netherlands,South Limburg,Gulperberg from Partij,https://climbfinder.com/en/climbs/gulperberg-partij
+1326,19.6 km,7.6%,17.1%,1486 m,Italy,Brescia,Passo di Gavia from Ponte di Legno,https://climbfinder.com/en/climbs/passo-di-gavia
+584,27.3 km,3.7%,11.7%,1021 m,France,Bourg d'Oisans,La Bérarde,https://climbfinder.com/en/climbs/la-berarde
+1577,12.2 km,10.8%,17.7%,1326 m,Italy,Sondrio,Mortirolo,https://climbfinder.com/en/climbs/mortirolo
+221,2.6 km,8.3%,16.6%,212 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Thier de Coo,https://climbfinder.com/en/climbs/thier-de-coo
+103,0.4 km,12.5%,17.5%,45 m,Belgium,Flemish Ardennes,Paterberg,https://climbfinder.com/en/climbs/paterberg
+59,0.7 km,8.3%,13.8%,58 m,Netherlands,South Limburg,Kruisberg,https://climbfinder.com/en/climbs/kruisberg
+53,1.2 km,6.4%,9.4%,79 m,Belgium,Voer-Region,Kasteelstraat from Sinnich,https://climbfinder.com/en/climbs/kasteelstraat
+83,2 km,4.3%,9.2%,88 m,Belgium,Flemish Ardennes,Oude Kwaremont,https://climbfinder.com/en/climbs/oude-kwaremont
+160,4.4 km,5.8%,9.6%,257 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Col du Rosier,https://climbfinder.com/en/climbs/rosier-est
+982,24.9 km,5.6%,11.2%,1405 m,Italy,Sondrio,Passo di Gavia from Bormio,https://climbfinder.com/en/climbs/passo-di-gavia-bormio
+471,10.5 km,6.1%,10.9%,647 m,France,Bourg d'Oisans,Col d'Ornon,https://climbfinder.com/en/climbs/col-d-ornon
+78,3.4 km,4.2%,8.4%,140 m,Netherlands,South Limburg,Vaalserberg / Drielandenpunt via Vaals,https://climbfinder.com/en/climbs/vaalserberg
+1185,14.6 km,8.8%,15.6%,1283 m,France,Bourg d'Oisans,Col du Sabot,https://climbfinder.com/en/climbs/col-du-sabot
+437,8.7 km,6.9%,9.8%,604 m,Italy,Sondrio,Torri di Fraele from Turripiano,https://climbfinder.com/en/climbs/torri-di-fraele
+817,21.7 km,5.3%,9.1%,1147 m,France,Upper Rhine,Col du Grand Ballon,https://climbfinder.com/en/climbs/grand-ballon-cernay
+82,0.5 km,9.2%,14.9%,50 m,Belgium,Druivenstreek,Moskesstraat,https://climbfinder.com/en/climbs/moskesstraat-terlanen
+1175,20.9 km,7%,11.4%,1474 m,France,Bourg d'Oisans,Col du Glandon,https://climbfinder.com/en/climbs/col-du-glandon-la-chambre
+821,13.8 km,7.5%,11.9%,1031 m,France,La Maurienne,Col du Chaussy,https://climbfinder.com/en/climbs/col-du-chaussy
+887,14.2 km,7.3%,14.7%,1040 m,France,Briançon,Col d'Izoard,https://climbfinder.com/en/climbs/col-d-izoard
+216,4.4 km,5.4%,13.9%,240 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Roche aux Faucons,https://climbfinder.com/en/climbs/roche-aux-faucons
+66,1 km,7.5%,11.3%,74 m,Netherlands,Rijk van Nijmegen,Oude Holleweg,https://climbfinder.com/en/climbs/oude-holleweg
+1232,47.4 km,4.3%,8.6%,2050 m,France,Savoie,Col de l'Iséran,https://climbfinder.com/en/climbs/col-de-l-iseran-bourg-saint-maurice
+,,,,,,,,https://climbfinder.com/en/climbs/
+1025,15 km,7.9%,14.4%,1182 m,France,Hautes-Pyrénées,Hautacam / Col de Tramassel,https://climbfinder.com/en/climbs/hautacam
+165,1 km,12.1%,18.9%,125 m,Belgium,Haute Ardenne,Côte des Hézalles,https://climbfinder.com/en/climbs/hezalles
+60,2.2 km,4.8%,6.9%,106 m,Belgium,Pays de Herve,Côte des Trois Frontières,https://climbfinder.com/en/climbs/cote-des-trois-frontieres
+1091,17.7 km,7.1%,12.8%,1260 m,France,Ain,Col du Grand Colombier,https://climbfinder.com/en/climbs/col-du-grand-colombier-culoz
+618,11.9 km,7.1%,9.9%,846 m,France,Bourg d'Oisans,Col du Télégraphe,https://climbfinder.com/en/climbs/col-du-telegraphe
+1183,13.5 km,9.2%,12.8%,1246 m,France,Savoie,Mont du Chat,https://climbfinder.com/en/climbs/mont-du-chat
+854,12.8 km,7.5%,14.1%,958 m,France,Bourg d'Oisans,Col de Sarenne,https://climbfinder.com/en/climbs/col-de-sarenne-lac-du-chambon
+25,0.9 km,5%,8%,44 m,Netherlands,Arnhem,Italiaanseweg,https://climbfinder.com/en/climbs/italiaanseweg
+1124,18.3 km,7.7%,11.7%,1401 m,France,Hautes-Pyrénées,Col du Tourmalet from Luz Saint Sauveur via Voie Laurent Fignon,https://climbfinder.com/en/climbs/col-du-tourmalet-luz-saint-sauveur
+1961,18.5 km,9.2%,17.1%,1709 m,Italy,Turin,Colle delle Finestre,https://climbfinder.com/en/climbs/colle-delle-finestre
+645,9.7 km,7.9%,11%,770 m,France,Upper Rhine,Col du Petit Ballon,https://climbfinder.com/en/climbs/petit-ballon-munster
+1034,20.7 km,6.6%,12%,1371 m,France,Briançon,Col Agnel from Château-Ville-Vieille,https://climbfinder.com/en/climbs/col-agnel
+57,0.6 km,8.3%,16.4%,50 m,Belgium,Druivenstreek,Smeysberg,https://climbfinder.com/en/climbs/smeysberg
+511,9.4 km,6%,14.7%,567 m,Italy,Como,Madonna del Ghisallo / Colle del Ghisallo,https://climbfinder.com/en/climbs/ghisallo
+77,1.1 km,7.4%,16%,79 m,Netherlands,South Limburg,Loorberg via Kersenpad,https://climbfinder.com/en/climbs/kersenpad
+925,13.2 km,7%,12.6%,923 m,Alps,Tessin,Passo San Gottardo / Tremolapass,https://climbfinder.com/en/climbs/gotthardpass-airolo
+612,10 km,7.1%,13.9%,707 m,France,Upper Rhine,Col du Platzerwasel from Metzeral,https://climbfinder.com/en/climbs/col-de-platzerwasel
+986,13 km,7.7%,13.2%,1000 m,France,Bourg d'Oisans,Col du Solude from Le Bourg d'Oisans via Villard Notre Dame,https://climbfinder.com/en/climbs/col-du-solude-villard-notre-dame
+1161,28.1 km,5.5%,9.9%,1543 m,France,Bourg d'Oisans,Col de la Croix-de-Fer from Saint-Jean-de-Maurienne via Saint-Jean-d'Arves,https://climbfinder.com/en/climbs/col-de-la-croix-de-fer
+1434,47.1 km,4.5%,13.1%,2138 m,Italy,Turin,Colle del Nivolet,https://climbfinder.com/en/climbs/colle-del-nivolet
+854,19.2 km,6.1%,11.6%,1178 m,France,Briançon,Col d'Izoard from Briançon,https://climbfinder.com/en/climbs/col-d-izoard-briancon
+34,2.2 km,3%,8.9%,65 m,Netherlands,Veluwezoom,Posbank,https://climbfinder.com/en/climbs/posbank
+827,13.6 km,7.6%,12.2%,1031 m,France,Hautes-Pyrénées,Luz Ardiden,https://climbfinder.com/en/climbs/luz-ardiden
+211,1.2 km,12.7%,17.6%,154 m,Belgium,High Fens & East Cantons,Ferme Libert,https://climbfinder.com/en/climbs/ferme-libert
+45,1.6 km,5%,6.3%,80 m,Netherlands,South Limburg,Loorberg,https://climbfinder.com/en/climbs/loorberg
+,,,,,,,,https://climbfinder.com/en/climbs/
+37,1.7 km,4%,8.5%,66 m,Netherlands,South Limburg,Fromberg,https://climbfinder.com/en/climbs/fromberg
+482,18 km,4.1%,11.4%,737 m,France,Haute-Saône,Ballon de Servance from Plancher-Bas,https://climbfinder.com/en/climbs/ballon-de-servance-plancher-bas
+1235,25.9 km,6.2%,11.4%,1609 m,France,Savoie,Col de la Madeleine from Feissons-sur-Isère,https://climbfinder.com/en/climbs/col-de-la-madeleine-feissons-sur-isere
+155,1 km,11.6%,18.6%,118 m,Belgium,Pays de Herve,Rue Tesny,https://climbfinder.com/en/climbs/tesny
+1764,9.8 km,12.3%,23.3%,1206 m,Italy,Udine,Monte Zoncolan,https://climbfinder.com/en/climbs/monte-zoncolan-ovaro
+710,18.7 km,5.7%,9.4%,1072 m,France,Upper Rhine,Col du Grand Ballon from Soultz,https://climbfinder.com/en/climbs/grand-ballon-soultz
+468,9 km,6.9%,13.8%,621 m,France,Vosges,Ballon d’Alsace,https://climbfinder.com/en/climbs/ballon-d-alsace-saint-maurice-sur-moselle
+341,17.4 km,4.3%,6%,752 m,France,Upper Rhine,Col de la Schlucht,https://climbfinder.com/en/climbs/col-de-la-schlucht-munster
+57,1 km,5.9%,15.8%,60 m,Netherlands,South Limburg,Gulperberg from Gulpen,https://climbfinder.com/en/climbs/gulperberg
+197,2.1 km,8.5%,15.2%,182 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Sur Steppes,https://climbfinder.com/en/climbs/sur-steppes
+103,2.6 km,5.4%,12.8%,141 m,Belgium,Pays de Herve,Les Waides,https://climbfinder.com/en/climbs/les-waides
+885,11.6 km,8.6%,12.6%,990 m,France,Haute Savoie,Col de Joux Plane,https://climbfinder.com/en/climbs/col-de-joux-plane-samoens
+68,1.4 km,5%,10%,68 m,Belgium,Denderland,Bosberg,https://climbfinder.com/en/climbs/bosberg
+634,27 km,4.4%,9.2%,1198 m,France,Serre Ponçon,Col de la Cayolle from Barcelonnette,https://climbfinder.com/en/climbs/col-de-la-cayolle-barcelonnette
+478,9.4 km,5.8%,17.2%,543 m,France,Haute-Saône,Col des Chevrères from Rexelaxert via Miellin,https://climbfinder.com/en/climbs/col-des-chevreres
+42,0.8 km,6.7%,10.2%,54 m,Belgium,Haspengouw,Slingerberg / Zusserdel,https://climbfinder.com/en/climbs/zusserdel
+1583,48.4 km,5.1%,9.5%,2460 m,Spain,Tenerife,El Teide,https://climbfinder.com/en/climbs/el-teide
+1055,32.2 km,4.5%,10.6%,1451 m,France,La Maurienne,Col de l'Iséran from Lanslebourg,https://climbfinder.com/en/climbs/col-de-l-iseran-lanslebourg
+506,13.6 km,5.7%,9.4%,778 m,France,Annecy,Semnoz from Col de Leschaux,https://climbfinder.com/en/climbs/semnoz-col-de-leschaux
+40,2.4 km,3.5%,8.7%,83 m,Netherlands,Veluwezoom,Zijpenberg via Snippendaalseweg,https://climbfinder.com/en/climbs/zijpenberg-rheden
+60,1.8 km,5.2%,9.8%,95 m,Belgium,Voer-Region,Op de Eiken,https://climbfinder.com/en/climbs/op-de-eiken
+233,3.4 km,8.1%,10.7%,277 m,France,La Maurienne,Lacets de Montvernier,https://climbfinder.com/en/climbs/lacets-de-montvernier
+26,0.9 km,4.9%,7.4%,46 m,Netherlands,South Limburg,Bemelerberg,https://climbfinder.com/en/climbs/bemelerberg
+1180,16.1 km,7.8%,16.3%,1260 m,Alps,Bern,Grosse Scheidegg from Meiringen,https://climbfinder.com/en/climbs/grosse-scheidegg-meiringen
+803,19.3 km,6%,9.4%,1155 m,France,Savoie,Cormet de Roselend from Bourg-Saint-Maurice,https://climbfinder.com/en/climbs/cormet-de-roselend-bourg-saint-maurice
+,,,,,,,,https://climbfinder.com/en/climbs/
+696,14.4 km,6%,13.6%,861 m,France,Upper Rhine,Col du Petit Ballon from Whir au Val,https://climbfinder.com/en/climbs/petit-ballon-whir-au-val
+60,3 km,3.8%,9.2%,114 m,Netherlands,South Limburg,Schweiberg from Mechelen,https://climbfinder.com/en/climbs/schweiberg
+535,12.1 km,6.5%,9.8%,786 m,Italy,Dolomites,Passo Pordoi,https://climbfinder.com/en/climbs/passo-pordoi-canazei
+963,29.7 km,4.7%,9.4%,1409 m,France,Hautes-Pyrénées,Col d'Aubisque from Argelès Gazost via Col du Soulor,https://climbfinder.com/en/climbs/col-d-aubisque
+1065,26.6 km,5.2%,11.9%,1379 m,France,Bourg d'Oisans,Col du Glandon from Barrage du Verney / Allemont,https://climbfinder.com/en/climbs/col-du-glandon-barrage-du-verney
+119,18.2 km,2.3%,3.8%,423 m,France,Vaucluse,Gorges de la Nesque from Villes-sur-Auzon,https://climbfinder.com/en/climbs/gorges-de-la-nesque-villes-sur-auzon
+162,6.8 km,4.7%,7.1%,318 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Col du Rosier from Spa,https://climbfinder.com/en/climbs/rosier-nord
+41,0.4 km,10.2%,11.3%,40 m,Netherlands,Rijk van Nijmegen,Beekmansdalseweg,https://climbfinder.com/en/climbs/beekmansdalseweg
+2124,9.2 km,13%,35.9%,1196 m,Italy,Trento,Scanuppia / Malga Palazzo,https://climbfinder.com/en/climbs/scanuppia-malga-palazzo
+589,12.4 km,6.5%,12.4%,802 m,France,Hautes-Pyrénées,Col d'Aspin,https://climbfinder.com/en/climbs/col-d-aspin
+901,12.8 km,7.5%,13.3%,962 m,France,Upper Rhine,Col du Grand Ballon from Saint-Amarin,https://climbfinder.com/en/climbs/col-du-grand-ballon-saint-amarin
+53,4.1 km,2.8%,7.4%,117 m,Netherlands,Veluwezoom,Zijpenberg from Rozendaal,https://climbfinder.com/en/climbs/zijpenberg-rozendaal
+193,1.4 km,10.6%,16.4%,151 m,Belgium,"Valleys of the Meuse, Sambre and Orneau",Thier de Huy,https://climbfinder.com/en/climbs/thier-de-huy
+49,1.7 km,5.1%,7.9%,86 m,Belgium,Voer-Region,De Plank from Sint-Pieters-Voeren,https://climbfinder.com/en/climbs/planck
+996,12.8 km,7.8%,15.8%,1002 m,Italy,Belluno,Passo Fedaia,https://climbfinder.com/en/climbs/passo-fedaia-caprille
+1416,31.6 km,5.7%,12.7%,1789 m,Italy,Cuneo,Colle dell'Agnello,https://climbfinder.com/en/climbs/colle-dell-agnello-casteldelfino
+47,0.4 km,7.7%,11.2%,33 m,Belgium,Flemish Ardennes,Molenberg,https://climbfinder.com/en/climbs/molenberg
+1455,38.6 km,4.9%,13.1%,1898 m,Alps,Tyrol,Kaunertaler Gletscherstrasse from Prutz,https://climbfinder.com/en/climbs/kaunertaler-gletscherstrasse-prutz
+251,8 km,4.2%,11.5%,335 m,France,Bourg d'Oisans,Col de Sarenne from Alpe d'Huez,https://climbfinder.com/en/climbs/col-de-sarenne-alpe-d-huez
+59,0.8 km,8.1%,11.9%,67 m,Belgium,Haspengouw,Hallembaye,https://climbfinder.com/en/climbs/hallembaye
+664,6.4 km,9.5%,18.5%,605 m,France,Bourg d'Oisans,Oulles,https://climbfinder.com/en/climbs/oulles
+39,1.5 km,5.1%,6.7%,74 m,Belgium,Voer-Region,Gieveld,https://climbfinder.com/en/climbs/gieveld
+1321,19.6 km,7.8%,14.4%,1525 m,France,La Maurienne,Col de la Madeleine from La Chambre via Montgellafrey,https://climbfinder.com/en/climbs/col-de-la-madeleine-la-chambre-montgellafrey
+186,3.6 km,6.1%,12.4%,222 m,Belgium,Haute Ardenne,Côte de Wanne,https://climbfinder.com/en/climbs/cote-de-wanne
+39,1.1 km,5.4%,8%,62 m,Netherlands,South Limburg,Geulhemmerberg,https://climbfinder.com/en/climbs/geulhemmerberg
+,,,,,,,,https://climbfinder.com/en/climbs/
+457,9.7 km,6.5%,15.2%,624 m,France,Upper Rhine,Col du Petit Ballon from Sondernach,https://climbfinder.com/en/climbs/petit-ballon-sondernach
+25,1.5 km,3.4%,7.7%,52 m,Netherlands,Veluwezoom,Rozenbos / Holleweg,https://climbfinder.com/en/climbs/holleweg-veluwezoom
+126,5.1 km,4.6%,7.7%,236 m,Belgium,Haute Ardenne,Côte d'Aisomont,https://climbfinder.com/en/climbs/aisomont
+98,3 km,5.5%,7.6%,167 m,Belgium,Pays de Herve,Côte de Forêt,https://climbfinder.com/en/climbs/cote-de-foret
+444,1.8 km,15.5%,21.7%,273 m,Italy,Como,Muro di Sormano,https://climbfinder.com/en/climbs/muro-di-sormano-colma
+1235,19.3 km,7.9%,11.2%,1522 m,France,La Maurienne,Col de la Madeleine,https://climbfinder.com/en/climbs/col-de-la-madeleine-la-chambre
+26,1.3 km,4.1%,6.2%,54 m,Netherlands,Utrecht Hill Ridge,Amerongse Berg from Overberg,https://climbfinder.com/en/climbs/amerongse-berg
+429,9.1 km,6.6%,11.9%,600 m,Italy,Dolomites,Passo Gardena,https://climbfinder.com/en/climbs/passo-di-gardena-corvara
+110,0.8 km,9.1%,17.4%,69 m,Belgium,West-Flemish Hills,Mont Kemmel,https://climbfinder.com/en/climbs/mont-kemmel-west
+675,15.8 km,6.1%,9.4%,972 m,France,Upper Rhine,Col du Grand Ballon from Willer-sur-Thur,https://climbfinder.com/en/climbs/grand-ballon-willer-sur-thur
+1022,29.4 km,5.2%,11.6%,1525 m,France,Hautes-Pyrénées,Col de Tentes from Luz Saint Sauveur via Cirque de Gavarnie,https://climbfinder.com/en/climbs/col-de-tentes-gavarnie
+1111,18.9 km,7.4%,14.1%,1403 m,France,Hautes-Pyrénées,Col du Tourmalet from Luz Saint Sauveur via Super Barèges,https://climbfinder.com/en/climbs/col-du-tourmalet-luz-saint-sauveur-super-bareges
+990,19.9 km,6.3%,14.5%,1247 m,Italy,Verbano-Cusio-Ossola,Mottarone from Stresa,https://climbfinder.com/en/climbs/mottarone-stresa
+74,3.4 km,3.8%,9.5%,131 m,Belgium,Pays de Herve,Rue de Beusdael from Sippenaeken,https://climbfinder.com/en/climbs/rue-de-beusdael
+511,10.2 km,7%,9.7%,708 m,Spain,Serra de Tramuntana,Sa Calobra / Coll dels Reis,https://climbfinder.com/en/climbs/sa-calobra-port-de-sa-calobra
+1028,13.7 km,8.3%,11.6%,1132 m,Alps,Valais,Nufenenpass,https://climbfinder.com/en/climbs/nufenenpass-ulrichen
+1316,44.5 km,4.6%,10.5%,2056 m,Spain,Gran Canaria,Pico de las Nieves,https://climbfinder.com/en/climbs/pico-de-las-nieves-maspalomas
+146,1 km,10.1%,15.8%,103 m,Belgium,Flemish Ardennes,Fiertelmeers,https://climbfinder.com/en/climbs/fiertelmeers
+34,1.2 km,4.9%,8.4%,59 m,Belgium,Pajottenland,Congoberg,https://climbfinder.com/en/climbs/congoberg
+79,0.8 km,6.4%,14.7%,49 m,Belgium,Flemish Ardennes,Taaienberg,https://climbfinder.com/en/climbs/taaienberg
+463,9.3 km,6.9%,10.6%,643 m,Italy,Belluno,Passo Pordoi from Arabba,https://climbfinder.com/en/climbs/passo-pordoi-arabba
+446,19.5 km,4.4%,8.6%,862 m,France,Vercors,Col de Rousset from Die,https://climbfinder.com/en/climbs/col-de-rousset-die
+698,17.7 km,5.8%,9.6%,1037 m,France,Bourg d'Oisans,Col du Mollard,https://climbfinder.com/en/climbs/col-du-mollard-villargondran
+722,12.2 km,7.3%,11.7%,891 m,Alps,Uri,Furkapass from Realp,https://climbfinder.com/en/climbs/furkapass-realp
+885,16.2 km,6.8%,15.4%,1111 m,France,Haute Savoie,Col de la Colombière,https://climbfinder.com/en/climbs/col-de-la-colombiere-scionzier
+,,,,,,,,https://climbfinder.com/en/climbs/
+280,2.7 km,7.3%,23.9%,195 m,Belgium,Heart of the Ardennes,Pied Monti,https://climbfinder.com/en/climbs/pied-monti
+64,0.7 km,9.6%,12.1%,64 m,Netherlands,South Limburg,Brakkeberg via Vogelzangweg,https://climbfinder.com/en/climbs/brakkeberg
+170,1.4 km,10.7%,18.9%,149 m,Belgium,Pays de Herve,Drolenval,https://climbfinder.com/en/climbs/drolenval
+500,7.6 km,7.6%,14.8%,577 m,France,Bourg d'Oisans,Oz en Oisans from Barrage du Verney,https://climbfinder.com/en/climbs/col-d-oz
+76,1 km,7.8%,15.5%,77 m,Belgium,Pays de Herve,Berg la Clouse,https://climbfinder.com/en/climbs/berg-la-clouse
+179,1.3 km,11.3%,17.8%,149 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Voie des Chars,https://climbfinder.com/en/climbs/voie-des-chars
+891,20.3 km,6.2%,9%,1251 m,France,Savoie,Cormet de Roselend from Beaufort,https://climbfinder.com/en/climbs/cormet-de-roselend
+873,12.2 km,7.9%,15.2%,964 m,France,Savoie,Col du Pré from Beaufort,https://climbfinder.com/en/climbs/col-du-pre-beaufort
+1065,26.3 km,5.8%,10.4%,1534 m,Alps,Bern,Grimselpass from Innertkirchen,https://climbfinder.com/en/climbs/grimselpass-innertkirchen
+269,4.9 km,6.5%,12.6%,320 m,France,French Ardennes,Côte du Malgré-Tout,https://climbfinder.com/en/climbs/cote-du-malgre-tout
+651,29.8 km,4.6%,6%,1378 m,France,Savoie,Col du Petit Saint-Bernard from Bourg Saint Maurice,https://climbfinder.com/en/climbs/col-du-petit-saint-bernard-bourg-saint-maurice-route-de-petit-saint-bernard
+533,13.2 km,5.4%,13.4%,720 m,France,Briançon,Pré de Madame Carle from Vallouise,https://climbfinder.com/en/climbs/pre-de-madame-carle
+36,1.8 km,4.1%,7.5%,73 m,Netherlands,South Limburg,Sibbergrubbe from Valkenburg,https://climbfinder.com/en/climbs/sibbergrubbe
+52,0.9 km,6.9%,12.2%,65 m,Netherlands,South Limburg,Schilberg from Slenaken,https://climbfinder.com/en/climbs/schilberg
+84,2.1 km,5.1%,12.8%,109 m,Belgium,Voer-Region,Schophemerheide from 's Gravenvoeren,https://climbfinder.com/en/climbs/schophemerheide
+106,3 km,5.5%,10.5%,166 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Côte de Xhierfomont,https://climbfinder.com/en/climbs/xhierfomont
+156,13.1 km,2.8%,9.1%,369 m,Belgium,High Fens & East Cantons,Mützenich from Eupen via Wesertalsperre,https://climbfinder.com/en/climbs/mutzenich-eupen-wesertalsperre
+851,18.9 km,5.9%,14.4%,1115 m,France,Briançon,Col de Vars,https://climbfinder.com/en/climbs/col-de-vars-guillestre
+1273,16.1 km,8.7%,12.5%,1395 m,France,Hautes-Pyrénées,Col de Portet from Saint Lary Soulan,https://climbfinder.com/en/climbs/col-portet-saint-lary-soulan
+469,24.7 km,3.6%,8.9%,877 m,France,Upper Rhine,Col du Grand Ballon from Kruth,https://climbfinder.com/en/climbs/grand-ballon-kruth
+130,0.9 km,11.2%,16.5%,105 m,Belgium,Heart of the Ardennes,Saint-Roch,https://climbfinder.com/en/climbs/saint-roch
+790,16.9 km,6.5%,11.8%,1105 m,France,Serre Ponçon,Col d'Allos from Barcelonnette,https://climbfinder.com/en/climbs/col-d-allos
+100,4.5 km,3.9%,8.3%,173 m,Netherlands,South Limburg,Camerig via Groenenweg,https://climbfinder.com/en/climbs/camerig-groenenweg
+222,3.9 km,7%,12%,271 m,Belgium,Heart of the Ardennes,Col de Haussire South,https://climbfinder.com/en/climbs/haussire-south
+53,1.2 km,6.4%,10.4%,75 m,Netherlands,Rijk van Nijmegen,Muur van Beek / Van Randwijckweg from Beek,https://climbfinder.com/en/climbs/van-randwijckweg
+,,,,,,,,https://climbfinder.com/en/climbs/
+23,2.5 km,2.8%,4.8%,69 m,Netherlands,Rijk van Nijmegen,Oude Kleefsebaan from Wyler,https://climbfinder.com/en/climbs/oude-kleefsebaan
+49,1 km,5.3%,13.6%,55 m,Netherlands,South Limburg,Piemert,https://climbfinder.com/en/climbs/piemert
+1432,22.5 km,7.6%,15.7%,1717 m,France,Savoie,Col de la Loze,https://climbfinder.com/en/climbs/col-de-la-loze-brides-les-bains
+39,1 km,5%,10.9%,53 m,Belgium,Hageland,Grasbos / Poggio van Diest,https://climbfinder.com/en/climbs/grasbos-poggio-diest
+949,27.1 km,5.2%,10.7%,1405 m,France,Hautes-Pyrénées,Cirque de Troumouse from Luz-Saint Sauveur,https://climbfinder.com/en/climbs/cirque-de-troumouse-luz-saint-sauveur
+521,5.2 km,9.7%,16.1%,507 m,France,Serre Ponçon,Col de Pontis,https://climbfinder.com/en/climbs/col-de-pontis-ubaye
+27,0.6 km,6.3%,8.8%,39 m,Netherlands,Veluwezoom,Emmapiramide,https://climbfinder.com/en/climbs/emmapiramide
+68,1 km,7.9%,10.8%,77 m,Netherlands,South Limburg,Oude Huls from Simpelveld,https://climbfinder.com/en/climbs/oude-huls
+847,7.5 km,8.7%,19.9%,656 m,Italy,Belluno,Tre Cime di Lavaredo from Misurina,https://climbfinder.com/en/climbs/tre-cime-di-lavaredo-misurina
+455,11.8 km,5.9%,10.4%,694 m,France,Annecy,Col de la Colombière from Le Grand Bornand,https://climbfinder.com/en/climbs/col-de-la-colombiere
+54,0.9 km,7.1%,11.9%,66 m,Belgium,Flemish Ardennes,Berendries,https://climbfinder.com/en/climbs/berendries
+996,14 km,7.4%,15.9%,1038 m,Spain,Picos de Europa,Lagos de Covadonga from Cangas de Onis,https://climbfinder.com/en/climbs/lagos-de-covadonga-cangas-de-onis
+212,1.9 km,9.1%,19.6%,173 m,Belgium,"Valleys of the Meuse, Sambre and Orneau",Triple Mur des Monty,https://climbfinder.com/en/climbs/triple-mur-de-monty
+113,1.4 km,7.6%,15%,106 m,Belgium,Flemish Ardennes,Schapenberg via Riekestraat,https://climbfinder.com/en/climbs/schapenberg
+181,8.3 km,4.2%,8.6%,347 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Col du Rosier via La Gleize,https://climbfinder.com/en/climbs/rosier-sud
+790,8.1 km,9.6%,16.6%,776 m,Italy,Trento,Menador / Monte Rovere from Caldonazzo,https://climbfinder.com/en/climbs/menador-monte-rovere-caldonazzo
+1322,26.2 km,6.7%,10.6%,1753 m,Italy,Sondrio,Passo di San Marco from Morbegno,https://climbfinder.com/en/climbs/passo-di-san-marco-morbegno
+149,1.6 km,9.5%,13%,149 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Chambralles,https://climbfinder.com/en/climbs/chambralles
+470,7.3 km,7.4%,13.3%,537 m,France,Annecy,Col de la Forclaz de Montmin from Menthon-Saint-Bernard,https://climbfinder.com/en/climbs/col-de-la-forclaz-de-montmin-menthon-saint-bernard
+125,4.1 km,4.7%,10.3%,191 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Côte de Niaster,https://climbfinder.com/en/climbs/cote-de-niaster
+1131,11.4 km,9.5%,15.7%,1084 m,France,Serre Ponçon,Mont Colombis from La Plaine,https://climbfinder.com/en/climbs/mont-colombis
+81,0.6 km,11.1%,15.5%,65 m,Netherlands,South Limburg,Kromhagerweg,https://climbfinder.com/en/climbs/kromhagerweg
+914,9.8 km,9.5%,14.7%,923 m,Italy,Belluno,Passo Giau,https://climbfinder.com/en/climbs/passo-giau-selva-di-cadore
+933,17.5 km,6.9%,11.9%,1213 m,France,Bourg d'Oisans,Col du Galibier from Valloire,https://climbfinder.com/en/climbs/col-du-galibier-valloire
+1164,34.3 km,5.5%,9.7%,1881 m,Italy,Aosta Valley,Col du Grand-Saint-Bernard,https://climbfinder.com/en/climbs/col-du-grand-saint-bernard-aoste
+,,,,,,,,https://climbfinder.com/en/climbs/
+71,1.1 km,7.7%,13.2%,82 m,Belgium,Flemish Ardennes,Kanarieberg,https://climbfinder.com/en/climbs/kanarieberg
+374,16.5 km,4.2%,8.8%,701 m,France,Territoire de Belfort,Ballon d’Alsace from Giromagny,https://climbfinder.com/en/climbs/ballon-d-alsace-giromagny
+558,22.5 km,4.3%,9.6%,966 m,France,Hautes-Pyrénées,Hourquette d'Ancizan from Payolle,https://climbfinder.com/en/climbs/hourquette-d-ancizan-campan
+287,5.3 km,7.1%,10.8%,375 m,Italy,Dolomites,Passo Sella from Plan de Gralba,https://climbfinder.com/en/climbs/passo-sella-plan-de-gralba
+36,1.9 km,3.4%,8.3%,65 m,Netherlands,Rijk van Nijmegen,Zevenheuvelenweg from Groesbeek,https://climbfinder.com/en/climbs/zevenheuvelenweg
+238,9.2 km,4.7%,9.1%,435 m,Spain,Serra de Tramuntana,Coll de sa Batalla from Caimari,https://climbfinder.com/en/climbs/coll-de-sa-batalla-caimari
+79,2.3 km,4.2%,13.3%,99 m,Netherlands,South Limburg,Lange Bosweg,https://climbfinder.com/en/climbs/lange-bosweg
+241,6.8 km,5.8%,10.9%,393 m,France,Upper Rhine,Col d'Oderen from Kruth,https://climbfinder.com/en/climbs/col-d-oderen
+191,2.1 km,9.2%,13.5%,194 m,Belgium,Heart of the Ardennes,Roche-à-Frêne,https://climbfinder.com/en/climbs/roche-a-frene
+1070,17.8 km,7.6%,12%,1360 m,Alps,Uri,Sustenpass from Wassen,https://climbfinder.com/en/climbs/sustenpass-wassen
+29,0.9 km,5.1%,8.2%,44 m,Netherlands,Arnhem,Holleweg from Kasteel Doorwerth,https://climbfinder.com/en/climbs/holleweg-doorwerth
+27,0.7 km,3.7%,10.1%,25 m,Netherlands,South Limburg,Maasberg from Kasteel Elsloo,https://climbfinder.com/en/climbs/maasberg
+63,5.9 km,2.6%,9.4%,153 m,France,Vaucluse,Col de la Madeleine from Malaucene,https://climbfinder.com/en/climbs/col-de-la-madeleine-malaucene
+223,2.9 km,8.2%,12.2%,235 m,France,Ardèche,Le Serre de Tourre,https://climbfinder.com/en/climbs/le-serre-de-tourre
+161,0.9 km,13%,16.4%,119 m,Belgium,High Fens & East Cantons,Route de Saint-Vith,https://climbfinder.com/en/climbs/route-de-saint-vith
+57,1 km,6.6%,12.6%,69 m,Germany,Cologne,Orsbach from Lemiers,https://climbfinder.com/en/climbs/orsbach
+33,1.6 km,3.7%,8.2%,58 m,Germany,Rijk van Nijmegen,Vogelsang / Hohldörn,https://climbfinder.com/en/climbs/vogelzang-holdeurn
+65,2.2 km,4.8%,10.3%,104 m,Belgium,Voer-Region,Magnebos,https://climbfinder.com/en/climbs/magnebos
+761,16.5 km,6.4%,10.3%,1060 m,Alps,Valais,Furkapass,https://climbfinder.com/en/climbs/furkapass
+944,17.1 km,7%,13.8%,1202 m,France,Pyrénées-Atlantiques,Col d'Aubisque,https://climbfinder.com/en/climbs/col-d-aubisque-laruns
+1150,25.6 km,6.5%,11.5%,1659 m,France,Alpes-Maritimes,Cime de la Bonette from Saint-Étienne-de-Tinée,https://climbfinder.com/en/climbs/col-de-la-bonette-saint-etienne-de-tinee
+1422,29.1 km,6.2%,14.1%,1806 m,Italy,Bolzano,Passo del Rombo,https://climbfinder.com/en/climbs/passo-del-rombo-st-leonhard-in-passeier
+173,14.1 km,3%,7.8%,425 m,Belgium,High Fens & East Cantons,Baraque Michel,https://climbfinder.com/en/climbs/baraque-michel
+1500,25.7 km,7.1%,12%,1818 m,Alps,Valais,Col du Sanetsch,https://climbfinder.com/en/climbs/col-du-sanetsch
+46,1.9 km,4.6%,7.5%,86 m,Belgium,Pays des Collines,Bois de la Houppe,https://climbfinder.com/en/climbs/bois-de-la-houppe
+,,,,,,,,https://climbfinder.com/en/climbs/
+666,23.8 km,4.6%,8.4%,1095 m,Italy,Sondrio,Passo di Foscagno from Bormio,https://climbfinder.com/en/climbs/passo-di-foscagno
+1346,30.3 km,5.9%,13.5%,1799 m,Italy,Sondrio,Passo dello Spluga from Chiavenna,https://climbfinder.com/en/climbs/passo-dello-spluga-chiavenna
+39,1.2 km,5.6%,7.6%,67 m,Netherlands,South Limburg,Slingerberg,https://climbfinder.com/en/climbs/slingerberg
+642,14.6 km,5.6%,12.4%,817 m,France,Serre Ponçon,Col de Vars from Les Gleizolles,https://climbfinder.com/en/climbs/col-de-vars-les-gleizolles
+17,0.7 km,4.8%,6.7%,31 m,Netherlands,Utrecht Hill Ridge,Grebbeberg from Wageningen,https://climbfinder.com/en/climbs/grebbeberg
+171,11.8 km,3.7%,5.3%,442 m,France,Annecy,Col de Leschaux from Sévrier,https://climbfinder.com/en/climbs/col-de-leschaux-sevrier
+522,22.5 km,4.6%,6.9%,1031 m,France,Ardèche,Col de Meyrand,https://climbfinder.com/en/climbs/col-de-meyrand
+645,11.5 km,7.1%,11.9%,821 m,France,Serre Ponçon,Col des Champs from Colmars,https://climbfinder.com/en/climbs/col-des-champs-colmars
+44,1.7 km,4.5%,10.6%,74 m,Netherlands,South Limburg,Koning van Spanje,https://climbfinder.com/en/climbs/koning-van-spanje
+55,2.8 km,3.5%,10.5%,99 m,Netherlands,South Limburg,Epenerbaan,https://climbfinder.com/en/climbs/epenerbaan
+21,0.6 km,5.2%,7.9%,34 m,Netherlands,Utrecht Hill Ridge,Koerheuvel / Paardenveld,https://climbfinder.com/en/climbs/koerheuvel
+159,2.6 km,7.3%,13.5%,189 m,France,Briançon,Col de l'Échelle from Névache,https://climbfinder.com/en/climbs/col-de-l-echelle-nevache
+37,0.4 km,9.7%,12.8%,34 m,Netherlands,Drenthe,Col du VAM via Ronde van Drenthepad,https://climbfinder.com/en/climbs/vam-berg
+782,34.8 km,4%,11.7%,1398 m,France,Briançon,Col du Galibier from Briançon,https://climbfinder.com/en/climbs/col-du-galibier-briancon
+457,8.6 km,6.8%,13.4%,585 m,France,Bourg d'Oisans,Col du Galibier from Col du Lautaret,https://climbfinder.com/en/climbs/col-du-galibier-lautaret
+838,15.9 km,6.7%,11.5%,1071 m,Italy,Belluno,Passo Giau from Cortina d'Ampezzo,https://climbfinder.com/en/climbs/passo-giau-pocol
+431,12.9 km,5.1%,12.7%,652 m,France,Hautes-Pyrénées,Col d'Aspin from Sainte Marie de Campan,https://climbfinder.com/en/climbs/col-d-aspin-sainte-marie-de-campan
+688,12.3 km,6.4%,12.4%,794 m,Spain,Costa Brava,Rocacorba / Puigsou from Banyoles,https://climbfinder.com/en/climbs/rocacorba-banyoles
+468,17.3 km,4.9%,8.3%,844 m,France,Annecy,Col des Aravis,https://climbfinder.com/en/climbs/col-des-aravis-thones
+1007,18.8 km,6.8%,11%,1278 m,France,Ariège,Col de Pailhères from Ax-les-Thermes,https://climbfinder.com/en/climbs/col-de-pailheres
+871,18.4 km,5.8%,13.8%,1067 m,France,Bourg d'Oisans,Alpe d'Huez via Villard-Reculas & Pas de la Confession,https://climbfinder.com/en/climbs/alpe-d-huez-villard-reculas
+92,1.2 km,7.4%,18.2%,89 m,Belgium,Pays des Collines,Côte du Trieu,https://climbfinder.com/en/climbs/cote-de-trieu
+138,1.2 km,7.2%,14.6%,88 m,Belgium,Pays des Collines,Mont Saint-Laurent from Saint-Sauveur,https://climbfinder.com/en/climbs/mont-saint-laurent
+198,6.5 km,4.9%,12%,320 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Côte de Desnie,https://climbfinder.com/en/climbs/desnie
+405,13.5 km,4.9%,8.6%,662 m,France,Vosges,Ballon de Servance,https://climbfinder.com/en/climbs/ballon-de-servance
+,,,,,,,,https://climbfinder.com/en/climbs/
+25,0.8 km,5.3%,6.8%,43 m,Belgium,Leiestreek,Tiegemberg,https://climbfinder.com/en/climbs/tiegemberg
+178,6.4 km,5%,8.8%,317 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",La Vecquée,https://climbfinder.com/en/climbs/vecquee
+1607,12.5 km,11.1%,14.5%,1385 m,Alps,Tyrol,Rettenbachferner via Ötztaler Gletscherstrasse,https://climbfinder.com/en/climbs/rettenbachferner-otztaler-gletscherstrasse
+152,3.6 km,5.7%,13.2%,205 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Haute Levée,https://climbfinder.com/en/climbs/haute-levee
+216,8.2 km,4.9%,8.4%,403 m,France,Upper Rhine,Col de Bramont from Wildenstein,https://climbfinder.com/en/climbs/col-de-bramont
+842,13.9 km,7.1%,14.1%,981 m,France,Bourg d'Oisans,Col du Solude,https://climbfinder.com/en/climbs/col-du-solude-la-paute
+96,1.9 km,5.3%,7.5%,103 m,Belgium,"Valleys of the Meuse, Sambre and Orneau",Citadelle de Namur via Route Merveilleuse,https://climbfinder.com/en/climbs/route-merveilleuse-citadelle-de-namur
+200,1.6 km,9.7%,20.4%,151 m,Belgium,Condroz - Famenne,Montagne de la Croix from Dinant,https://climbfinder.com/en/climbs/montagne-de-la-croix-dinant
+600,9.1 km,7.7%,13.2%,705 m,Italy,Sondrio,Bormio 2000 from Bormio,https://climbfinder.com/en/climbs/bormio-2000
+254,4.9 km,7%,9.6%,345 m,Spain,Mallorca,Puig de Sant Salvador from Felanitx,https://climbfinder.com/en/climbs/monasterio-san-salvador-felanitx
+112,0.7 km,12.2%,19.2%,80 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Sur le Thier,https://climbfinder.com/en/climbs/sur-le-thier
+438,11.1 km,5.8%,9.1%,638 m,France,Drôme,Col de la Chaudière from Bourdeaux,https://climbfinder.com/en/climbs/col-de-la-chaudiere-bourdeaux
+50,2.1 km,4.4%,7.7%,94 m,Netherlands,South Limburg,Trintelerberg from Eys,https://climbfinder.com/en/climbs/trintelerberg
+51,1.4 km,5.7%,8.4%,83 m,Netherlands,South Limburg,Eperheide from Epen,https://climbfinder.com/en/climbs/eperheide
+177,1.5 km,10.5%,16.9%,157 m,Belgium,Condroz - Famenne,Gayolle,https://climbfinder.com/en/climbs/gayolle
+55,0.5 km,7.7%,11.2%,38 m,Belgium,Druivenstreek,Bekestraat from Eizer,https://climbfinder.com/en/climbs/bekestraat-eizer
+37,1 km,5%,11.9%,51 m,Netherlands,South Limburg,Kruisberg from Nijswiller,https://climbfinder.com/en/climbs/kruisberg-nijswiller
+149,5.9 km,4.1%,12.5%,244 m,Germany,Cologne,Kesternich from Rurberg,https://climbfinder.com/en/climbs/kesternich-rurberg
+431,8.8 km,5.8%,15.9%,512 m,France,Serre Ponçon,Col de Pontis from Savines-le-Lac,https://climbfinder.com/en/climbs/col-de-pontis-savines-le-lac
+1028,22.1 km,5.7%,12.6%,1259 m,Alps,Tyrol,Timmelsjoch from Sölden,https://climbfinder.com/en/climbs/timmelsjoch-solden
+98,1.7 km,6.7%,13.3%,114 m,Belgium,Flemish Ardennes,Kluisberg,https://climbfinder.com/en/climbs/kluisberg
+1284,41 km,4.8%,11.6%,1983 m,Alps,Valais,Col du Grand-Saint-Bernard from Orsières,https://climbfinder.com/en/climbs/col-du-grand-saint-bernard-orsieres
+1117,27.7 km,5.8%,13.1%,1595 m,Alps,Bern,Sustenpass,https://climbfinder.com/en/climbs/sustenpass-innertkirchen
+661,10 km,7.9%,13%,783 m,France,Hautes-Pyrénées,Hourquette d'Ancizan,https://climbfinder.com/en/climbs/hourquette-d-ancizan
+1275,19.2 km,7.5%,15.4%,1436 m,Italy,Bergamo,Passo di San Marco from Olmo al Brembo,https://climbfinder.com/en/climbs/passo-di-san-marco-olmo-al-brembo
+,,,,,,,,https://climbfinder.com/en/climbs/
+894,20.3 km,6.3%,9.1%,1282 m,France,Serre Ponçon,Col de la Cayolle,https://climbfinder.com/en/climbs/col-de-la-cayolle-saint-martin
+199,1.7 km,10.4%,14.1%,178 m,France,Briançon,Mur du Pallon,https://climbfinder.com/en/climbs/mur-de-pallon
+519,3.8 km,11.2%,17.6%,430 m,Spain,Tenerife,Mirador de Cherfe from Masca,https://climbfinder.com/en/climbs/mirador-de-cherfe-masca
+197,1.7 km,9.6%,17.1%,159 m,Belgium,Pays de Herve,Haute Folie via Rue des Gottes,https://climbfinder.com/en/climbs/haute-folie
+154,1.6 km,9.5%,13.3%,155 m,Belgium,Haute Ardenne,Wanneranval,https://climbfinder.com/en/climbs/wanneranval
+33,1.1 km,5.1%,7.5%,54 m,Germany,Montferland,Eltenberg from Elten,https://climbfinder.com/en/climbs/eltenberg
+866,11.6 km,8%,18.4%,933 m,Italy,Bergamo,Passo di Valcava from San Gottardo,https://climbfinder.com/en/climbs/passo-di-valcava-san-gottardo
+69,0.7 km,9.3%,12.8%,66 m,Belgium,Pajottenland,Bruine Put,https://climbfinder.com/en/climbs/bruine-put-dworp
+146,1.4 km,9.8%,15.7%,134 m,Belgium,"Valleys of the Vesdre, de l'Amblève et de l'Ourthe",Côte d'Amermont,https://climbfinder.com/en/climbs/cote-d-amermont
+31,3.8 km,2.5%,5.3%,95 m,France,Vaucluse,Gorges de la Nesque from Monieux,https://climbfinder.com/en/climbs/gorges-de-la-nesque-monieux
+1101,19.7 km,6.8%,17.2%,1348 m,Italy,Lecco,Alpe Giumello from Bellano,https://climbfinder.com/en/climbs/alpe-giumello
+85,3 km,4.2%,15.2%,126 m,Belgium,Pays de Herve,Côte du Bois de la Hees / Kinkenweg from Montzen,https://climbfinder.com/en/climbs/kinkenweg
+422,9.4 km,6.1%,15.1%,576 m,France,Upper Rhine,Collet du Linge from Weiermatten,https://climbfinder.com/en/climbs/collet-du-linge-weiermatten
+27,1.3 km,4%,8.1%,53 m,Germany,Niederrheinischer Höhenzug,Geldenberg from Frasselt,https://climbfinder.com/en/climbs/geldenberg-frasselt
+716,13.9 km,6.7%,13.7%,928 m,France,Haute-Garonne,Col de Peyresourde,https://climbfinder.com/en/climbs/col-de-peyresourde-bagneres-de-luchon
+985,10.9 km,7.9%,18.4%,864 m,France,Pyrénées-Atlantiques,Mont Artzamendi from Laxia,https://climbfinder.com/en/climbs/mont-artzamendi-laxia
+591,11.2 km,7.1%,11.1%,794 m,Italy,Dolomites,Passo Sella from Canazei,https://climbfinder.com/en/climbs/passo-sella-canazei
+1656,10.1 km,12.4%,19.5%,1256 m,Alps,Tyrol,Kitzbüheler Horn,https://climbfinder.com/en/climbs/kitzbuheler-horn
+1044,22.5 km,6.1%,11.7%,1360 m,Alps,Grisons,Albulapass,https://climbfinder.com/en/climbs/albulapass
+63,4.4 km,3.1%,7.6%,137 m,Belgium,Flemish Ardennes,Hotond via Hoogbergstraat,https://climbfinder.com/en/climbs/hotond
+507,9 km,7%,13.3%,633 m,France,Bourg d'Oisans,Les Deux Alpes,https://climbfinder.com/en/climbs/les-deux-alpes
+885,11.7 km,7%,13.2%,818 m,Alps,Slovenia,Vršič from Kranjska Gora,https://climbfinder.com/en/climbs/vrsic-kranjska-gora
+499,12.9 km,5.2%,13%,673 m,France,Upper Rhine,Ballon d'Alsace from Sewen,https://climbfinder.com/en/climbs/ballon-d-alsace-sewen
+445,9.7 km,6.6%,9.7%,639 m,France,Alpes-Maritimes,Col de Vence from Vence,https://climbfinder.com/en/climbs/col-de-vence
+630,11.7 km,7%,10.6%,816 m,France,Annecy,Col de la Croix Fry from Thônes,https://climbfinder.com/en/climbs/col-de-la-croix-fry-thones
+,,,,,,,,https://climbfinder.com/en/climbs/
