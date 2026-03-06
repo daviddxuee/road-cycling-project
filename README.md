@@ -63,6 +63,12 @@ python3 --version
 git --version
 ```
 
+Configured Git with my identity so commits are properly credited:
+```bash
+git config --global user.name "daviddxuee"
+git config --global user.email "davidxue0908@gmail.com"
+```
+
 ---
 
 ### Step 2 — Create GitHub Repo and Clone Locally
@@ -86,7 +92,7 @@ pip3 install requests beautifulsoup4 pandas lxml
 | `requests` | Fetch web pages |
 | `beautifulsoup4` | Parse HTML |
 | `pandas` | Organize data into tables |
-| `lxml` | HTML parser (more stable than default) |
+| `lxml` | HTML parser (more stable than default on Python 3.14) |
 
 ---
 
@@ -119,6 +125,8 @@ def get_climb_stats(climb_url):
     soup = BeautifulSoup(response.text, "lxml")
     
     stats = {}
+
+    # Get stats table
     table = soup.find("table", class_="table-transparant")
     if table:
         rows = table.find_all("tr")
@@ -127,29 +135,57 @@ def get_climb_stats(climb_url):
             value = row.find("td", class_="text-end")
             if label and value:
                 stats[label.text.strip()] = value.text.strip()
+
+    # Get country and region from breadcrumb
+    # Structure: Home > World > Europe > Country > ... > Region > Climb Name
+    breadcrumb = soup.find("ol", class_="breadcrumb")
+    if breadcrumb:
+        items = breadcrumb.find_all("li", class_="breadcrumb-item")
+        if len(items) >= 4:
+            stats["Country"] = items[3].text.strip()
+        if len(items) >= 2:
+            stats["Region"] = items[-2].text.strip()
+
     return stats
 ```
 
-**Key learning:** Added a 1 second delay between requests (`time.sleep(1)`) to be respectful to the website's server.
+**Phase 3** — Loop through 12 pages to collect 300 climbs:
+```python
+all_climb_links = []
+for page_num in range(1, 13):
+    print(f"Fetching page {page_num} of 12...")
+    page_url = f"https://climbfinder.com/en/ranking?s=popular&p={page_num}"
+    links = get_climb_links(page_url)
+    all_climb_links.extend(links)
+    time.sleep(1)  # be polite, wait 1 second between requests
+```
+
+**Key learning:** Added a 1 second delay between requests (`time.sleep(1)`) to be respectful to the website's server and avoid getting blocked.
 
 ---
 
-### Step 5 — Save Data to CSV
+### Step 5 — Clean and Save Data to CSV
 
-Used pandas to save the scraped data into a CSV file:
+After scraping, 12 out of 312 rows were blank (climb pages with no stats table). These were removed using pandas:
+
 ```python
-df = pd.DataFrame(all_climbs)
-df.to_csv("climbs.csv", index=False)
+df = pd.read_csv('climbs.csv')
+df_clean = df.dropna(subset=['Length', 'Country', 'Region'])
+df_clean.to_csv('climbs.csv', index=False)
+print(f'Removed blank rows. Climbs remaining: {len(df_clean)}')
 ```
+
+Final result: **300 clean climbs** saved to `climbs.csv`.
 
 **Sample output:**
 
-| Name | Difficulty Points | Length | Avg Gradient | Steepest 100m | Total Ascent |
-|---|---|---|---|---|---|
-| Mont Ventoux | 1352 | 20.8 km | 7.7% | 13.3% | 1594 m |
-| Alpe d'Huez | 975 | 14 km | 8% | 11.3% | 1122 m |
-| Passo dello Stelvio | 1465 | 24.9 km | 7.4% | 10.3% | 1846 m |
-| Col du Galibier | 1556 | 34.8 km | 6% | 10.6% | 2085 m |
+| Name | Difficulty Points | Length | Avg Gradient | Steepest 100m | Total Ascent | Region | Country |
+|---|---|---|---|---|---|---|---|
+| Mont Ventoux | 1352 | 20.8 km | 7.7% | 13.3% | 1594 m | Vaucluse | France |
+| Alpe d'Huez | 975 | 14 km | 8% | 11.3% | 1122 m | Bourg d'Oisans | France |
+| Passo dello Stelvio | 1465 | 24.9 km | 7.4% | 10.3% | 1846 m | Bolzano | Italy |
+| Col du Galibier | 1556 | 34.8 km | 6% | 10.6% | 2085 m | Bourg d'Oisans | France |
+| Eyserbosweg | 42 | 1.2 km | 6.8% | 10.1% | 82 m | South Limburg | Netherlands |
 
 ---
 
@@ -162,6 +198,17 @@ git remote add origin https://github.com/daviddxuee/road-cycling-project.git
 git add .
 git commit -m "add climbs scraper and CSV"
 git push -u origin main
+```
+
+Subsequent updates were pushed with descriptive commit messages:
+```bash
+git add .
+git commit -m "add country and region columns to climbs scraper"
+git push
+
+git add .
+git commit -m "clean blank rows from climbs data"
+git push
 ```
 
 ---
@@ -180,7 +227,9 @@ git push -u origin main
 
 - How to inspect HTML with browser developer tools to find the right elements to scrape
 - How to handle common scraping issues like 403 errors (blocked requests) and 404 errors (wrong URLs)
-- How to use `pandas` to organize and save data
+- How to loop through multiple pages to collect larger datasets
+- How to extract data from breadcrumb navigation for location context (country and region)
+- How to clean data by removing blank rows with pandas
 - How Git and GitHub work together for version control
 - The importance of going step by step and debugging errors one at a time
 
@@ -189,4 +238,4 @@ git push -u origin main
 ## 👤 Author
 
 **David Xue**
-[GitHub](https://github.com/daviddxuee)
+[GitHub](https://github.com/daviddxuee/road-cycling-project)
