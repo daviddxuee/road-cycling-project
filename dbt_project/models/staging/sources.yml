@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: CYCLING_PROJECT
+    schema: RAW
+    tables:
+      - name: climbs
+      - name: races
+      - name: stages
+      - name: race_climbs
