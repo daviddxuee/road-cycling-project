@@ -1,0 +1,121 @@
+race,position,climb_name,num_stages,num_editions,first_year
+Tour de France,1,Col du Tourmalet,62,61,1910
+Tour de France,2,Col du Galibier,39,37,1923
+Tour de France,3,Col d'Aspin,36,36,1923
+Tour de France,4,L'Alpe d'Huez,34,31,1952
+Tour de France,5,Col de Peyresourde,33,33,1923
+Tour de France,6,Col d'Aubisque,27,26,1923
+Tour de France,7,Col de la Madeleine,26,26,1969
+Tour de France,8,Côte de Châteaufort,23,23,1977
+Tour de France,9,Col de Portet-d'Aspet,21,21,1923
+Tour de France,10,Col de la Colombière,20,20,1978
+Tour de France,11,Mont Ventoux,18,18,1951
+Tour de France,12,Col d'Izoard,16,16,1923
+Tour de France,13,Col de Menté,16,16,1979
+Tour de France,14,Col du Télégraphe,15,15,1947
+Tour de France,15,Cormet de Roselend,15,15,1979
+Tour de France,16,Col de la Croix de Fer,15,14,1947
+Tour de France,17,Col de Vars,15,15,1947
+Tour de France,18,Col des Aravis,15,15,1923
+Tour de France,19,Puy de Dôme,15,14,1952
+Tour de France,20,Col de Marie-Blanque,15,14,1978
+Tour de France,21,Côte de Saint-Rémy-Lès-Chevreuse,15,15,1986
+Tour de France,22,Col des Saisies,14,14,1979
+Tour de France,23,Ballon d'Alsace,14,14,1905
+Tour de France,24,Col du Glandon,14,13,1977
+Tour de France,25,Côte du Pavé des Gardes,14,14,1978
+Tour de France,26,Avoriaz,14,9,1975
+Tour de France,27,Col des Ares,13,13,1923
+Tour de France,28,Col de Joux Plane,13,13,1978
+Tour de France,29,Côte de 17 Tournants,12,12,1977
+Tour de France,30,Col du Soulor,11,10,1979
+Tour de France,31,Pla d'Adet,11,11,1974
+Tour de France,32,Côte de la Madeleine,10,10,1977
+Tour de France,33,Mûr-de-Bretagne,10,10,1977
+Tour de France,34,Col de la Croix de Chaubouret,10,10,1977
+Tour de France,35,Sestriere,10,7,1952
+Tour de France,36,Col de Val Louron-Azet,10,10,1997
+Tour de France,37,Col de Porte,9,9,1907
+Tour de France,38,Côte de Châtillon,9,9,1978
+Tour de France,39,Luz-Ardiden,9,9,1985
+Tour de France,40,Col du Portillon,9,9,1979
+Giro d'Italia,1,Roccaraso,21,16,1952
+Giro d'Italia,2,Passo Pordoi,21,21,1940
+Giro d'Italia,3,Passo dell'Aprica,18,15,1962
+Giro d'Italia,4,Passo del Tonale,17,17,1954
+Giro d'Italia,5,Passo del Mortirolo,16,16,1991
+Giro d'Italia,6,Passo Rolle,14,14,1937
+Giro d'Italia,7,Passo dello Stelvio,13,13,1953
+Giro d'Italia,8,Sestriere,12,12,1982
+Giro d'Italia,9,Passo Sella,11,11,1940
+Giro d'Italia,10,Passo Fedaia,11,11,1991
+Giro d'Italia,11,Abetone,11,8,1940
+Giro d'Italia,12,Monte Terminillo,11,11,1936
+Giro d'Italia,13,Passo del Bracco,10,10,1938
+Giro d'Italia,14,Passo Falzarego,10,10,1940
+Giro d'Italia,15,Blockhaus,9,8,1967
+Giro d'Italia,16,Passo Campolongo,9,9,1969
+Giro d'Italia,17,Passo della Mendola,9,9,1937
+Giro d'Italia,18,Monte Bondone,9,9,1956
+Giro d'Italia,19,Campitello Matese,9,7,1969
+Giro d'Italia,20,Passo Gavia,8,8,1996
+Giro d'Italia,21,Passo Giau,8,8,1992
+Giro d'Italia,22,Passo di Costalunga,8,8,1937
+Giro d'Italia,23,Tre Cime di Lavaredo,8,8,1967
+Giro d'Italia,24,Passo San Pellegrino,8,8,1971
+Giro d'Italia,25,Passo Valparola,8,8,1977
+Giro d'Italia,26,Passo Gardena,8,8,1954
+Giro d'Italia,27,Osimo,7,4,1987
+Giro d'Italia,28,Valico del Macerone,7,7,1956
+Giro d'Italia,29,Passo della Consuma,7,7,1940
+Giro d'Italia,30,Oropa,7,7,1963
+Giro d'Italia,31,Muro di Ca' del Poggio,7,7,2013
+Giro d'Italia,32,Monte Grappa,7,7,1968
+Giro d'Italia,33,Forcella Staulanza,7,7,1970
+Giro d'Italia,34,Monte Zoncolan,7,7,2003
+Giro d'Italia,35,Etna,6,6,1967
+Giro d'Italia,36,Passo Tre Croci,6,6,1971
+Giro d'Italia,37,Il Ciocco,6,4,1974
+Giro d'Italia,38,Gran Sasso d'Italia,6,6,1971
+Giro d'Italia,39,Col St. Pantaleon,6,6,1991
+Giro d'Italia,40,Sella Valcalda,6,6,1987
+Vuelta a España,1,Lagos de Covadonga,23,23,1983
+Vuelta a España,2,Puerto de Navacerrada,17,16,1982
+Vuelta a España,3,Sierra Nevada,15,14,1979
+Vuelta a España,4,Alto del Naranco,14,14,1974
+Vuelta a España,5,Alto del León,12,12,1950
+Vuelta a España,6,Alto de Santo Emiliano,12,12,1990
+Vuelta a España,7,Alto del Cordal,12,12,2000
+Vuelta a España,8,Estación de Esquí Cerler,12,12,1987
+Vuelta a España,9,Alto de la Cobertoria,10,10,1990
+Vuelta a España,10,Alto de l'Angliru,10,10,1999
+Vuelta a España,11,Puerto de San Lorenzo,10,10,2006
+Vuelta a España,12,Puerto de la Morcuera,9,9,1979
+Vuelta a España,13,Puerto de Alisas,9,9,1947
+Vuelta a España,14,Alto del Purche,8,8,2004
+Vuelta a España,15,Alto de la Colladona,8,7,2005
+Vuelta a España,16,Puerto de Tudons,8,6,2001
+Vuelta a España,17,Aramón Formigal,8,7,1972
+Vuelta a España,18,Mirador del Fito,8,8,1979
+Vuelta a España,19,Alto de Tenebredo,7,7,2002
+Vuelta a España,20,Alto de la Falla de Los Lobos,7,7,1990
+Vuelta a España,21,Xorret de Catí,7,7,1998
+Vuelta a España,22,Alto de la Comella,7,7,2012
+Vuelta a España,23,Alto de San Jerónimo,7,7,2002
+Vuelta a España,24,Coll d'Ordino,7,7,2000
+Vuelta a España,25,Valdezcaray,7,7,1988
+Vuelta a España,26,Sierra de La Pandera,7,7,2002
+Vuelta a España,27,Alto de Abantos,7,7,1990
+Vuelta a España,28,Alto de El Caracol,7,6,2008
+Vuelta a España,29,Portillo de Lunada,6,6,1990
+Vuelta a España,30,Collado de Hoz,6,6,2001
+Vuelta a España,31,Alto del Castillo,6,5,2001
+Vuelta a España,32,La Covatilla,6,6,2002
+Vuelta a España,33,Alto de Robledondo,6,6,2000
+Vuelta a España,34,Port del Cantó,6,6,2003
+Vuelta a España,35,Arcalís,6,6,1994
+Vuelta a España,36,Collado de Ozalba,5,5,2001
+Vuelta a España,37,Montjuïc,5,5,1947
+Vuelta a España,38,Alto del Vivero,5,5,2011
+Vuelta a España,39,Pal (Vallnord),5,5,1985
+Vuelta a España,40,Puerto de Confrides,5,5,1979
