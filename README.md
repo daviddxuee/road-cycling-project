@@ -8,14 +8,14 @@ A personal end-to-end data engineering project built from scratch — scraping r
 
 ## 🗂️ Project Overview
 
-This project scrapes data on the world's most famous cycling climbs, Grand Tour race winners, and stage-by-stage results, loads the raw data into Snowflake, and uses dbt to transform it into clean, analytical models.
+This project scrapes data on the world's most famous cycling climbs, Grand Tour race winners, stage-by-stage results, and climb appearances in races, loads the raw data into Snowflake, and uses dbt to transform it into clean, analytical models.
 
 **Questions this project aims to answer:**
 - Which climbs are the hardest in the world?
 - How do climbs compare across countries and regions?
 - Which countries and riders have dominated the Grand Tours historically?
+- Which climbs appear most frequently in the Tour de France, Giro d'Italia, and Vuelta a España?
 - Which stage types (mountain, flat, hilly) appear most in each race?
-- Which finish locations appear most frequently across Grand Tour stages?
 
 ---
 
@@ -25,6 +25,7 @@ This project scrapes data on the world's most famous cycling climbs, Grand Tour 
 |---|---|
 | Python | Web scraping and data loading |
 | BeautifulSoup | Parsing HTML from web pages |
+| cloudscraper | Bypassing Cloudflare protection |
 | Pandas | Shaping and saving data |
 | Snowflake | Cloud data warehouse |
 | dbt | Data transformation and modeling |
@@ -37,15 +38,16 @@ This project scrapes data on the world's most famous cycling climbs, Grand Tour 
 ```
 road-cycling-project/
 ├── scrapers/
-│   ├── scrape_climbs.py        # Scrapes climb stats from ClimbFinder
-│   ├── scrape_races.py         # Scrapes Grand Tour winners from Wikipedia
-│   └── scrape_stages.py        # Scrapes stage-by-stage results from Wikipedia
+│   ├── scrape_climbs.py          # Scrapes climb stats from ClimbFinder
+│   ├── scrape_races.py           # Scrapes Grand Tour winners from Wikipedia
+│   ├── scrape_stages.py          # Scrapes stage-by-stage results from Wikipedia
+│   └── scrape_race_climbs.py     # Scrapes climb appearances per race from ProCyclingStats
 ├── loaders/
-│   └── load_to_snowflake.py    # Loads all three CSVs into Snowflake
+│   └── load_to_snowflake.py      # Loads all four CSVs into Snowflake
 ├── dbt_project/
 │   ├── models/
-│   │   ├── staging/            # Clean raw data
-│   │   └── marts/              # Analytical models
+│   │   ├── staging/              # Clean raw data
+│   │   └── marts/                # Analytical models
 └── README.md
 ```
 
@@ -94,14 +96,23 @@ Stage-by-stage results for 2020–2024 across all three Grand Tours scraped from
 | stage_type | Type of stage (Flat, Mountain, Hilly, Time trial) |
 | stage_winner | Name and nationality of stage winner |
 
+### 4. Race Climbs (`race_climbs.csv`) — 120 rows
+Most frequently visited climbs per Grand Tour scraped from [ProCyclingStats](https://www.procyclingstats.com).
+
+| Column | Description |
+|---|---|
+| race | Race name |
+| position | Ranking position |
+| climb_name | Name of the climb |
+| num_stages | Number of stages the climb has appeared in |
+| num_editions | Number of race editions the climb has appeared in |
+| first_year | First year the climb appeared in the race |
+
 ---
 
 ## 🔢 Step by Step Walkthrough
 
 ### Step 1 — Set Up the Environment
-Installed the required tools:
-- Python 3.14, VS Code, Git
-
 ```bash
 python3 --version
 git --version
@@ -123,60 +134,40 @@ code .
 ### Step 3 — Install Python Libraries
 ```bash
 pip3 install requests beautifulsoup4 pandas lxml
+pip3 install cloudscraper procyclingstats
 pip3 install "snowflake-connector-python[pandas]"
 ```
 
 ---
 
 ### Step 4 — Scrape Cycling Climbs
-
-Used browser Inspect tool to identify HTML elements on ClimbFinder's ranking page. Scraped 12 pages of 25 climbs each, visiting each climb's individual page for detailed stats. Extracted country and region from breadcrumb navigation.
+Scraped 12 pages of 25 climbs each from ClimbFinder, visiting each climb's individual page for detailed stats. Extracted country and region from breadcrumb navigation.
 
 ```python
-# Get climb names and URLs from ranking pages
-climbs = soup.find_all("a", class_="ranking-item-title")
-
 # Get stats from each climb's page
 table = soup.find("table", class_="table-transparant")
 
 # Get country and region from breadcrumb
+# Structure: Home > World > Europe > Country > ... > Region > Climb Name
 breadcrumb = soup.find("ol", class_="breadcrumb")
 items = breadcrumb.find_all("li", class_="breadcrumb-item")
 stats["Country"] = items[3].text.strip()
 stats["Region"] = items[-2].text.strip()
 ```
 
-**Sample output:**
-
-| Name | Difficulty Points | Length | Avg Gradient | Total Ascent | Region | Country |
-|---|---|---|---|---|---|---|
-| Mont Ventoux | 1352 | 20.8 km | 7.7% | 1594 m | Vaucluse | France |
-| Alpe d'Huez | 975 | 14 km | 8% | 1122 m | Bourg d'Oisans | France |
-| Passo dello Stelvio | 1465 | 24.9 km | 7.4% | 1846 m | Bolzano | Italy |
-
 ---
 
 ### Step 5 — Scrape Grand Tour Race Winners
-
 Scraped historical Grand Tour winners from Wikipedia (1903–2025).
 
 **Key challenge:** ProCyclingStats and FirstCycling were blocked by Cloudflare — Wikipedia used as alternative.
 
-```python
-races = [
-    ("...Tour_de_France_general_classification_winners", "Tour de France"),
-    ("...Giro_d%27Italia_general_classification_winners", "Giro d'Italia"),
-    ("...Vuelta_a_Espa%C3%B1a_general_classification_winners", "Vuelta a España")
-]
-```
-
 ---
 
 ### Step 6 — Scrape Grand Tour Stages
-
 Scraped stage-by-stage results for 2020–2024 from Wikipedia.
 
-**Key challenge:** Some race pages had an extra elevation column that shifted all other columns by one position. Fixed by detecting the column structure from the header row:
+**Key challenge:** Some pages had an extra elevation column shifting all other columns by one. Fixed by detecting column structure from the header:
 
 ```python
 has_elevation = "elevation" in header_text
@@ -190,82 +181,60 @@ else:
 
 ---
 
-### Step 7 — Clean Data
+### Step 7 — Scrape Race Climbs from ProCyclingStats
+Scraped the most frequently visited climbs per Grand Tour from ProCyclingStats using `cloudscraper` to bypass Cloudflare protection.
 
 ```python
-# Remove blank rows
-df_clean = df.dropna(subset=['Length', 'Country', 'Region'])
+import cloudscraper
 
-# Clean special characters
-df['winner'] = df['winner'].str.replace('&', '').str.strip()
+scraper = cloudscraper.create_scraper()
 
-# Fix encoding
-df.to_csv("stages.csv", index=False, encoding='utf-8-sig')
+races = [
+    ("https://www.procyclingstats.com/race/tour-de-france/route/climbs", "Tour de France"),
+    ("https://www.procyclingstats.com/race/giro-d-italia/route/climbs", "Giro d'Italia"),
+    ("https://www.procyclingstats.com/race/vuelta-a-espana/route/climbs", "Vuelta a España")
+]
 ```
+
+**Sample output:**
+
+| Race | Position | Climb | Stages | Editions | First Year |
+|---|---|---|---|---|---|
+| Tour de France | 1 | Col du Tourmalet | 62 | 61 | 1910 |
+| Tour de France | 2 | Col du Galibier | 39 | 37 | 1923 |
+| Tour de France | 4 | L'Alpe d'Huez | 34 | 31 | 1952 |
 
 ---
 
 ### Step 8 — Set Up Snowflake
-
-Created a Snowflake free trial account on AWS US West (Oregon). Set up the database structure:
+Created a Snowflake free trial account on AWS US West (Oregon) and set up the database structure:
 
 ```sql
 CREATE DATABASE cycling_project;
 USE DATABASE cycling_project;
 CREATE SCHEMA raw;
 
-CREATE TABLE climbs (
-    name VARCHAR,
-    difficulty_points FLOAT,
-    length VARCHAR,
-    average_gradient VARCHAR,
-    steepest_100_metres VARCHAR,
-    total_ascent VARCHAR,
-    country VARCHAR,
-    region VARCHAR,
-    url VARCHAR
-);
-
-CREATE TABLE races (
-    race VARCHAR,
-    year INT,
-    winner VARCHAR,
-    country VARCHAR,
-    team VARCHAR,
-    distance VARCHAR
-);
-
-CREATE TABLE stages (
-    race VARCHAR,
-    year INT,
-    stage VARCHAR,
-    date VARCHAR,
-    route VARCHAR,
-    distance VARCHAR,
-    stage_type VARCHAR,
-    stage_winner VARCHAR
-);
+CREATE TABLE climbs (...);
+CREATE TABLE races (...);
+CREATE TABLE stages (...);
+CREATE TABLE race_climbs (...);
 ```
 
 ---
 
 ### Step 9 — Load Data into Snowflake
-
-Used the Snowflake Python connector to load all three CSVs into Snowflake:
+Used the Snowflake Python connector to load all four CSVs. Added truncation before each load to prevent duplicate data:
 
 ```python
-conn = snowflake.connector.connect(
-    user="your_username",
-    password="your_password",
-    account="WVAZMTZ-SSB01665",
-    warehouse="COMPUTE_WH",
-    database="CYCLING_PROJECT",
-    schema="RAW"
-)
+cursor.execute("TRUNCATE TABLE climbs")
+cursor.execute("TRUNCATE TABLE races")
+cursor.execute("TRUNCATE TABLE stages")
+cursor.execute("TRUNCATE TABLE race_climbs")
 
 write_pandas(conn, climbs, "CLIMBS")
 write_pandas(conn, races, "RACES")
 write_pandas(conn, stages, "STAGES")
+write_pandas(conn, race_climbs, "RACE_CLIMBS")
 ```
 
 Verified data loaded correctly:
@@ -274,14 +243,17 @@ SELECT 'climbs' AS table_name, COUNT(*) AS row_count FROM climbs
 UNION ALL
 SELECT 'races', COUNT(*) FROM races
 UNION ALL
-SELECT 'stages', COUNT(*) FROM stages;
+SELECT 'stages', COUNT(*) FROM stages
+UNION ALL
+SELECT 'race_climbs', COUNT(*) FROM race_climbs;
 ```
 
 Result:
 ```
-climbs    300
-races     307
-stages    312
+climbs        300
+races         307
+stages        312
+race_climbs   120
 ```
 
 ---
@@ -297,7 +269,7 @@ stages    312
 ## 💡 What I Learned
 
 - How to inspect HTML with browser developer tools to find the right elements to scrape
-- How to handle Cloudflare protection and find alternative data sources
+- How to handle Cloudflare protection using cloudscraper
 - How to loop through multiple pages to collect larger datasets
 - How to extract location data from breadcrumb navigation
 - How to debug scrapers by printing raw HTML to understand page structure
@@ -306,6 +278,7 @@ stages    312
 - How to clean data with pandas
 - How to set up a Snowflake database, schema, and tables
 - How to load CSV data into Snowflake using Python
+- How to prevent duplicate data by truncating tables before loading
 - How Git and GitHub work together for version control
 
 ---
