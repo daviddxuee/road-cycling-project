@@ -41,7 +41,7 @@ road-cycling-project/
 │   ├── scrape_races.py         # Scrapes Grand Tour winners from Wikipedia
 │   └── scrape_stages.py        # Scrapes stage-by-stage results from Wikipedia
 ├── loaders/
-│   └── load_to_snowflake.py    # Loads CSV data into Snowflake
+│   └── load_to_snowflake.py    # Loads all three CSVs into Snowflake
 ├── dbt_project/
 │   ├── models/
 │   │   ├── staging/            # Clean raw data
@@ -99,19 +99,12 @@ Stage-by-stage results for 2020–2024 across all three Grand Tours scraped from
 ## 🔢 Step by Step Walkthrough
 
 ### Step 1 — Set Up the Environment
-Installed the required tools on my machine:
-- Python 3.14
-- VS Code
-- Git
+Installed the required tools:
+- Python 3.14, VS Code, Git
 
-Verified everything was working by running:
 ```bash
 python3 --version
 git --version
-```
-
-Configured Git with my identity so commits are properly credited:
-```bash
 git config --global user.name "David Xue"
 git config --global user.email "youremail@gmail.com"
 ```
@@ -119,7 +112,6 @@ git config --global user.email "youremail@gmail.com"
 ---
 
 ### Step 2 — Create GitHub Repo and Clone Locally
-Created a new repository on GitHub, cloned it to my Desktop, and opened it in VS Code:
 ```bash
 git clone https://github.com/daviddxuee/road-cycling-project.git
 cd road-cycling-project
@@ -131,47 +123,27 @@ code .
 ### Step 3 — Install Python Libraries
 ```bash
 pip3 install requests beautifulsoup4 pandas lxml
+pip3 install "snowflake-connector-python[pandas]"
 ```
-
-| Library | Purpose |
-|---|---|
-| `requests` | Fetch web pages |
-| `beautifulsoup4` | Parse HTML |
-| `pandas` | Organize data into tables |
-| `lxml` | HTML parser (more stable than default on Python 3.14) |
 
 ---
 
 ### Step 4 — Scrape Cycling Climbs
 
-Used the browser's **Inspect** tool to identify HTML elements on ClimbFinder's ranking page.
+Used browser Inspect tool to identify HTML elements on ClimbFinder's ranking page. Scraped 12 pages of 25 climbs each, visiting each climb's individual page for detailed stats. Extracted country and region from breadcrumb navigation.
 
-**Phase 1** — Extract climb names and URLs from ranking pages:
 ```python
+# Get climb names and URLs from ranking pages
 climbs = soup.find_all("a", class_="ranking-item-title")
-for climb in climbs:
-    name = climb.text.strip()
-    link = "https://climbfinder.com/" + climb["href"]
-```
 
-**Phase 2** — Visit each climb page and extract stats:
-```python
+# Get stats from each climb's page
 table = soup.find("table", class_="table-transparant")
-# Extract country and region from breadcrumb navigation
-# Structure: Home > World > Europe > Country > ... > Region > Climb Name
+
+# Get country and region from breadcrumb
 breadcrumb = soup.find("ol", class_="breadcrumb")
 items = breadcrumb.find_all("li", class_="breadcrumb-item")
 stats["Country"] = items[3].text.strip()
 stats["Region"] = items[-2].text.strip()
-```
-
-**Phase 3** — Loop through 12 pages to collect 300 climbs:
-```python
-for page_num in range(1, 13):
-    page_url = f"https://climbfinder.com/en/ranking?s=popular&p={page_num}"
-    links = get_climb_links(page_url)
-    all_climb_links.extend(links)
-    time.sleep(1)
 ```
 
 **Sample output:**
@@ -186,25 +158,17 @@ for page_num in range(1, 13):
 
 ### Step 5 — Scrape Grand Tour Race Winners
 
-Scraped historical Grand Tour winners from Wikipedia for all three races.
+Scraped historical Grand Tour winners from Wikipedia (1903–2025).
 
-**Key challenge:** ProCyclingStats and FirstCycling were blocked by Cloudflare protection — Wikipedia was used as an alternative with clean, structured HTML tables.
+**Key challenge:** ProCyclingStats and FirstCycling were blocked by Cloudflare — Wikipedia used as alternative.
 
 ```python
 races = [
-    ("https://en.wikipedia.org/wiki/List_of_Tour_de_France_general_classification_winners", "Tour de France"),
-    ("https://en.wikipedia.org/wiki/List_of_Giro_d%27Italia_general_classification_winners", "Giro d'Italia"),
-    ("https://en.wikipedia.org/wiki/List_of_Vuelta_a_Espa%C3%B1a_general_classification_winners", "Vuelta a España")
+    ("...Tour_de_France_general_classification_winners", "Tour de France"),
+    ("...Giro_d%27Italia_general_classification_winners", "Giro d'Italia"),
+    ("...Vuelta_a_Espa%C3%B1a_general_classification_winners", "Vuelta a España")
 ]
 ```
-
-**Sample output:**
-
-| Race | Year | Winner | Country | Team |
-|---|---|---|---|---|
-| Tour de France | 2024 | Tadej Pogačar | Slovenia | UAE Team Emirates |
-| Giro d'Italia | 2024 | Tadej Pogačar | Slovenia | UAE Team Emirates |
-| Vuelta a España | 2024 | Primož Roglič | Slovenia | Red Bull - Bora - Hansgrohe |
 
 ---
 
@@ -212,12 +176,10 @@ races = [
 
 Scraped stage-by-stage results for 2020–2024 from Wikipedia.
 
-**Key challenge:** Different race pages had different table structures — the 2023 Tour de France and 2024 Giro d'Italia had an extra elevation gain column that shifted all other columns by one position. Fixed by detecting the column structure from the header row:
+**Key challenge:** Some race pages had an extra elevation column that shifted all other columns by one position. Fixed by detecting the column structure from the header row:
 
 ```python
-header_text = header_row.text.lower()
 has_elevation = "elevation" in header_text
-
 if has_elevation:
     stage_type = tds[5].text.strip()
     winner = tds[6].text.strip()
@@ -226,58 +188,106 @@ else:
     winner = tds[5].text.strip()
 ```
 
-**Sample output:**
-
-| Race | Year | Stage | Route | Stage Type | Winner |
-|---|---|---|---|---|---|
-| Tour de France | 2024 | 1 | Florence to Rimini | Hilly stage | Romain Bardet |
-| Giro d'Italia | 2024 | 1 | Venaria Reale to Torino | Flat stage | Jonathan Milan |
-| Vuelta a España | 2024 | 1 | Lisbon to Oeiras | Flat stage | Sam Welsford |
-
 ---
 
 ### Step 7 — Clean Data
 
-After scraping, data was cleaned using pandas:
 ```python
-# Remove blank rows from climbs
+# Remove blank rows
 df_clean = df.dropna(subset=['Length', 'Country', 'Region'])
 
-# Clean special characters from race winner names
+# Clean special characters
 df['winner'] = df['winner'].str.replace('&', '').str.strip()
 
-# Fix encoding issues in stages data
+# Fix encoding
 df.to_csv("stages.csv", index=False, encoding='utf-8-sig')
 ```
 
 ---
 
-### Step 8 — Push to GitHub
+### Step 8 — Set Up Snowflake
 
-All changes were version controlled with descriptive commit messages:
-```bash
-git add .
-git commit -m "add climbs scraper and CSV"
-git push
+Created a Snowflake free trial account on AWS US West (Oregon). Set up the database structure:
 
-git add .
-git commit -m "add country and region columns to climbs scraper"
-git push
+```sql
+CREATE DATABASE cycling_project;
+USE DATABASE cycling_project;
+CREATE SCHEMA raw;
 
-git add .
-git commit -m "add grand tour race results scraper with 307 results"
-git push
+CREATE TABLE climbs (
+    name VARCHAR,
+    difficulty_points FLOAT,
+    length VARCHAR,
+    average_gradient VARCHAR,
+    steepest_100_metres VARCHAR,
+    total_ascent VARCHAR,
+    country VARCHAR,
+    region VARCHAR,
+    url VARCHAR
+);
 
-git add .
-git commit -m "add grand tour stages scraper with 312 stages"
-git push
+CREATE TABLE races (
+    race VARCHAR,
+    year INT,
+    winner VARCHAR,
+    country VARCHAR,
+    team VARCHAR,
+    distance VARCHAR
+);
+
+CREATE TABLE stages (
+    race VARCHAR,
+    year INT,
+    stage VARCHAR,
+    date VARCHAR,
+    route VARCHAR,
+    distance VARCHAR,
+    stage_type VARCHAR,
+    stage_winner VARCHAR
+);
+```
+
+---
+
+### Step 9 — Load Data into Snowflake
+
+Used the Snowflake Python connector to load all three CSVs into Snowflake:
+
+```python
+conn = snowflake.connector.connect(
+    user="your_username",
+    password="your_password",
+    account="WVAZMTZ-SSB01665",
+    warehouse="COMPUTE_WH",
+    database="CYCLING_PROJECT",
+    schema="RAW"
+)
+
+write_pandas(conn, climbs, "CLIMBS")
+write_pandas(conn, races, "RACES")
+write_pandas(conn, stages, "STAGES")
+```
+
+Verified data loaded correctly:
+```sql
+SELECT 'climbs' AS table_name, COUNT(*) AS row_count FROM climbs
+UNION ALL
+SELECT 'races', COUNT(*) FROM races
+UNION ALL
+SELECT 'stages', COUNT(*) FROM stages;
+```
+
+Result:
+```
+climbs    300
+races     307
+stages    312
 ```
 
 ---
 
 ## 🚧 What's Next
 
-- [ ] Load all three CSVs into Snowflake tables
 - [ ] Connect dbt to Snowflake and build staging models
 - [ ] Build mart models to answer analytical questions
 - [ ] Visualize results in a dashboard
@@ -291,9 +301,11 @@ git push
 - How to loop through multiple pages to collect larger datasets
 - How to extract location data from breadcrumb navigation
 - How to debug scrapers by printing raw HTML to understand page structure
-- How to handle inconsistent table structures across pages using conditional logic
+- How to handle inconsistent table structures using conditional logic
 - How to fix character encoding issues with UTF-8
-- How to clean data by removing blank rows and special characters with pandas
+- How to clean data with pandas
+- How to set up a Snowflake database, schema, and tables
+- How to load CSV data into Snowflake using Python
 - How Git and GitHub work together for version control
 
 ---
