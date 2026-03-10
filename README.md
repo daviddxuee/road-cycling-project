@@ -2,7 +2,21 @@
 
 A personal end-to-end data engineering project built from scratch — scraping real cycling data from the web, storing it in Snowflake, and transforming it with dbt.
 
-> Built as a learning project to develop skills in Python, web scraping, Snowflake, dbt, and Git.
+> Built as a learning project to develop skills in Python, web scraping, Snowflake, dbt, and Git — with Claude (Anthropic's AI) as a collaborative coding partner throughout the entire project.
+
+---
+
+## 🤖 How I Used AI in This Project
+
+This project was built in close collaboration with **Claude (Anthropic)**, an AI assistant. Rather than simply copying and pasting code, I used Claude as an interactive coding partner to:
+
+- **Make architectural decisions** — Claude helped me scope the project, choose data sources, and decide what datasets to build
+- **Debug errors in real time** — every error was pasted into Claude, which diagnosed the issue and explained why it happened
+- **Learn while building** — Claude walked me through each concept line by line, gave exercises to test my understanding, and explained the "why" behind every decision
+- **Navigate blockers** — when ProCyclingStats and FirstCycling were blocked by Cloudflare, Claude suggested alternative sources and tools like `cloudscraper`
+- **Write and iterate on code** — Claude generated the initial scripts, but I ran every command, interpreted every result, and made decisions about what data to collect and how to clean it
+
+This approach reflects how modern data professionals work — knowing how to effectively leverage AI tools to accelerate development, debug faster, and make better decisions is a core skill in today's data engineering landscape.
 
 ---
 
@@ -10,7 +24,7 @@ A personal end-to-end data engineering project built from scratch — scraping r
 
 This project scrapes data on the world's most famous cycling climbs, Grand Tour race winners, stage-by-stage results, and climb appearances in races, loads the raw data into Snowflake, and uses dbt to transform it into clean, analytical models.
 
-**Questions this project aims to answer:**
+**Questions this project answers:**
 - Which climbs are the hardest in the world?
 - How do climbs compare across countries and regions?
 - Which countries and riders have dominated the Grand Tours historically?
@@ -30,6 +44,7 @@ This project scrapes data on the world's most famous cycling climbs, Grand Tour 
 | Snowflake | Cloud data warehouse |
 | dbt | Data transformation and modeling |
 | Git + GitHub | Version control |
+| Claude (Anthropic) | AI coding partner and debugging assistant |
 
 ---
 
@@ -46,8 +61,17 @@ road-cycling-project/
 │   └── load_to_snowflake.py      # Loads all four CSVs into Snowflake
 ├── dbt_project/
 │   ├── models/
-│   │   ├── staging/              # Clean raw data
-│   │   └── marts/                # Analytical models
+│   │   ├── staging/
+│   │   │   ├── sources.yml
+│   │   │   ├── stg_climbs.sql
+│   │   │   ├── stg_races.sql
+│   │   │   ├── stg_stages.sql
+│   │   │   └── stg_race_climbs.sql
+│   │   └── marts/
+│   │       ├── mart_hardest_climbs.sql
+│   │       ├── mart_grand_tour_winners.sql
+│   │       ├── mart_climb_appearances.sql
+│   │       └── mart_stage_analysis.sql
 └── README.md
 ```
 
@@ -68,14 +92,13 @@ The world's most popular cycling climbs scraped from [ClimbFinder](https://climb
 | total_ascent | Total elevation gain |
 | region | Region where the climb is located |
 | country | Country where the climb is located |
-| url | Source URL |
 
 ### 2. Grand Tour Winners (`races.csv`) — 307 rows
 Historical race winners across all three Grand Tours scraped from Wikipedia (1903–2025).
 
 | Column | Description |
 |---|---|
-| race | Race name (Tour de France, Giro d'Italia, Vuelta a España) |
+| race | Race name |
 | year | Year of the race |
 | winner | Name of the winner |
 | country | Winner's country |
@@ -83,21 +106,19 @@ Historical race winners across all three Grand Tours scraped from Wikipedia (190
 | distance | Total race distance |
 
 ### 3. Grand Tour Stages (`stages.csv`) — 312 rows
-Stage-by-stage results for 2020–2024 across all three Grand Tours scraped from Wikipedia.
+Stage-by-stage results for 2020–2024 across all three Grand Tours.
 
 | Column | Description |
 |---|---|
 | race | Race name |
 | year | Year of the race |
 | stage | Stage number |
-| date | Date of the stage |
 | route | Start and finish locations |
-| distance | Stage distance |
 | stage_type | Type of stage (Flat, Mountain, Hilly, Time trial) |
 | stage_winner | Name and nationality of stage winner |
 
 ### 4. Race Climbs (`race_climbs.csv`) — 120 rows
-Most frequently visited climbs per Grand Tour scraped from [ProCyclingStats](https://www.procyclingstats.com).
+Most frequently visited climbs per Grand Tour from [ProCyclingStats](https://www.procyclingstats.com).
 
 | Column | Description |
 |---|---|
@@ -113,9 +134,14 @@ Most frequently visited climbs per Grand Tour scraped from [ProCyclingStats](htt
 ## 🔢 Step by Step Walkthrough
 
 ### Step 1 — Set Up the Environment
+Installed Python 3.11 (via pyenv), VS Code, Git, and Homebrew. Configured Git identity for version control.
+
+> **AI collaboration:** Claude helped diagnose that dbt is incompatible with Python 3.14 and guided the installation of pyenv and Python 3.11 as a fix.
+
 ```bash
-python3 --version
-git --version
+brew install pyenv
+pyenv install 3.11
+pyenv local 3.11
 git config --global user.name "David Xue"
 git config --global user.email "youremail@gmail.com"
 ```
@@ -133,15 +159,19 @@ code .
 
 ### Step 3 — Install Python Libraries
 ```bash
-pip3 install requests beautifulsoup4 pandas lxml
-pip3 install cloudscraper procyclingstats
-pip3 install "snowflake-connector-python[pandas]"
+pip install requests beautifulsoup4 pandas lxml
+pip install cloudscraper procyclingstats
+pip install "snowflake-connector-python[pandas]"
+pip install dbt-snowflake
 ```
 
 ---
 
 ### Step 4 — Scrape Cycling Climbs
-Scraped 12 pages of 25 climbs each from ClimbFinder, visiting each climb's individual page for detailed stats. Extracted country and region from breadcrumb navigation.
+
+> **AI collaboration:** Claude suggested ClimbFinder as a data source, helped identify the correct HTML elements using browser Inspect tool screenshots, and debugged multiple issues including 403 errors, wrong table classes, and Python 3.14 BeautifulSoup compatibility issues.
+
+Scraped 12 pages of 25 climbs each from ClimbFinder, visiting each individual climb page for detailed stats. Extracted country and region from breadcrumb navigation.
 
 ```python
 # Get stats from each climb's page
@@ -158,16 +188,19 @@ stats["Region"] = items[-2].text.strip()
 ---
 
 ### Step 5 — Scrape Grand Tour Race Winners
-Scraped historical Grand Tour winners from Wikipedia (1903–2025).
 
-**Key challenge:** ProCyclingStats and FirstCycling were blocked by Cloudflare — Wikipedia used as alternative.
+> **AI collaboration:** Claude identified that ProCyclingStats and FirstCycling were protected by Cloudflare and suggested Wikipedia as a reliable alternative. Claude also helped debug the table selection issue by printing raw HTML to understand the page structure.
+
+```python
+tables = soup.find_all("table", class_="wikitable")
+table = tables[1]  # First table is a legend key, second is the actual data
+```
 
 ---
 
 ### Step 6 — Scrape Grand Tour Stages
-Scraped stage-by-stage results for 2020–2024 from Wikipedia.
 
-**Key challenge:** Some pages had an extra elevation column shifting all other columns by one. Fixed by detecting column structure from the header:
+> **AI collaboration:** Claude identified that some race pages had an extra elevation column that shifted all other columns by one position, and implemented a conditional fix based on the header row.
 
 ```python
 has_elevation = "elevation" in header_text
@@ -182,38 +215,24 @@ else:
 ---
 
 ### Step 7 — Scrape Race Climbs from ProCyclingStats
-Scraped the most frequently visited climbs per Grand Tour from ProCyclingStats using `cloudscraper` to bypass Cloudflare protection.
+
+> **AI collaboration:** I identified the ProCyclingStats climb frequency pages as a valuable data source. Claude suggested using `cloudscraper` to bypass Cloudflare protection after the standard requests library was blocked.
 
 ```python
 import cloudscraper
-
 scraper = cloudscraper.create_scraper()
-
-races = [
-    ("https://www.procyclingstats.com/race/tour-de-france/route/climbs", "Tour de France"),
-    ("https://www.procyclingstats.com/race/giro-d-italia/route/climbs", "Giro d'Italia"),
-    ("https://www.procyclingstats.com/race/vuelta-a-espana/route/climbs", "Vuelta a España")
-]
+response = scraper.get("https://www.procyclingstats.com/race/tour-de-france/route/climbs")
 ```
-
-**Sample output:**
-
-| Race | Position | Climb | Stages | Editions | First Year |
-|---|---|---|---|---|---|
-| Tour de France | 1 | Col du Tourmalet | 62 | 61 | 1910 |
-| Tour de France | 2 | Col du Galibier | 39 | 37 | 1923 |
-| Tour de France | 4 | L'Alpe d'Huez | 34 | 31 | 1952 |
 
 ---
 
 ### Step 8 — Set Up Snowflake
-Created a Snowflake free trial account on AWS US West (Oregon) and set up the database structure:
+
+> **AI collaboration:** Claude guided the Snowflake setup step by step, including creating the database, schema, and tables with appropriate data types.
 
 ```sql
 CREATE DATABASE cycling_project;
-USE DATABASE cycling_project;
 CREATE SCHEMA raw;
-
 CREATE TABLE climbs (...);
 CREATE TABLE races (...);
 CREATE TABLE stages (...);
@@ -223,7 +242,8 @@ CREATE TABLE race_climbs (...);
 ---
 
 ### Step 9 — Load Data into Snowflake
-Used the Snowflake Python connector to load all four CSVs. Added truncation before each load to prevent duplicate data:
+
+> **AI collaboration:** Claude identified a duplicate data issue when the loader was run multiple times and implemented a truncation step to prevent it.
 
 ```python
 cursor.execute("TRUNCATE TABLE climbs")
@@ -237,49 +257,70 @@ write_pandas(conn, stages, "STAGES")
 write_pandas(conn, race_climbs, "RACE_CLIMBS")
 ```
 
-Verified data loaded correctly:
-```sql
-SELECT 'climbs' AS table_name, COUNT(*) AS row_count FROM climbs
-UNION ALL
-SELECT 'races', COUNT(*) FROM races
-UNION ALL
-SELECT 'stages', COUNT(*) FROM stages
-UNION ALL
-SELECT 'race_climbs', COUNT(*) FROM race_climbs;
-```
+---
 
-Result:
-```
-climbs        300
-races         307
-stages        312
-race_climbs   120
+### Step 10 — Build dbt Staging Models
+
+> **AI collaboration:** Claude explained the dbt staging/mart architecture, helped fix column name mismatches between the scraper output and Snowflake, and guided the setup of the sources.yml configuration file.
+
+Built 4 staging models to clean raw data — fixing column names, casting data types, and stripping units:
+
+```sql
+-- Example: stg_climbs.sql
+select
+    name                                          as climb_name,
+    difficulty_points,
+    replace(length, ' km', '')::float             as length_km,
+    replace(average_gradient, '%', '')::float     as average_gradient_pct,
+    country,
+    region
+from {{ source('raw', 'climbs') }}
 ```
 
 ---
 
-## 🚧 What's Next
+### Step 11 — Build dbt Mart Models
 
-- [ ] Connect dbt to Snowflake and build staging models
-- [ ] Build mart models to answer analytical questions
-- [ ] Visualize results in a dashboard
+> **AI collaboration:** Claude identified that special characters like `§` and `‡` in winner names were causing incorrect win counts in the grand tour winners model, and implemented a fix to strip them in the staging layer. This caught that Eddy Merckx and Tadej Pogačar's wins were being undercounted.
+
+Built 4 mart models to answer analytical questions:
+
+- **mart_hardest_climbs** — top climbs ranked by difficulty with country and region
+- **mart_grand_tour_winners** — most successful riders and countries across Grand Tours
+- **mart_climb_appearances** — climb frequency data enriched with difficulty stats
+- **mart_stage_analysis** — breakdown of stage types per race per year
+
+**Sample insight — most dominant riders:**
+
+| Rider | Country | Race | Wins |
+|---|---|---|---|
+| Eddy Merckx | Belgium | Tour de France | 5 |
+| Eddy Merckx | Belgium | Giro d'Italia | 5 |
+| Tadej Pogačar | Slovenia | Tour de France | 4 |
+| Fausto Coppi | Italy | Giro d'Italia | 5 |
 
 ---
 
 ## 💡 What I Learned
 
-- How to inspect HTML with browser developer tools to find the right elements to scrape
+**Technical skills:**
+- How to inspect HTML with browser developer tools to find scrapeable elements
 - How to handle Cloudflare protection using cloudscraper
 - How to loop through multiple pages to collect larger datasets
 - How to extract location data from breadcrumb navigation
-- How to debug scrapers by printing raw HTML to understand page structure
+- How to debug scrapers by printing raw HTML
 - How to handle inconsistent table structures using conditional logic
 - How to fix character encoding issues with UTF-8
-- How to clean data with pandas
-- How to set up a Snowflake database, schema, and tables
-- How to load CSV data into Snowflake using Python
-- How to prevent duplicate data by truncating tables before loading
+- How to set up a Snowflake database and load data with Python
+- How to build a dbt pipeline with staging and mart layers
 - How Git and GitHub work together for version control
+
+**AI collaboration skills:**
+- How to effectively communicate errors and context to an AI assistant
+- How to use AI to make architectural and data source decisions
+- How to iterate quickly by combining AI suggestions with hands-on testing
+- How to learn from AI explanations rather than just copying code
+- How to use AI as a debugging partner by sharing raw output and error messages
 
 ---
 
